@@ -798,69 +798,6 @@ void SimbodyEngine::convertQuaternionsToDirectionCosines(double aQ1, double aQ2,
 //--- Private Utility Methods Below Here ---
 
 
-//_____________________________________________________________________________
-/**
- * Scale the dynamics engine
- *
- * @param aScaleSet the set of XYZ scale factors for the bodies
- * @param aFinalMass the mass that the scaled model should have
- * @param aPreserveMassDist whether or not the masses of the
- *        individual bodies should be scaled with the body scale factors.
- * @return Whether or not scaling was successful.
- */
-bool SimbodyEngine::scale(SimTK::State& s, const ScaleSet& aScaleSet, double aFinalMass, bool aPreserveMassDist)
-{
-    // second argument is a flag to scale the masses of the bodies along with their
-    // geometry. If preserve mass distribution is true then the masses are not scaled.
-    _model->updBodySet().scale(aScaleSet, !aPreserveMassDist);
-
-    // When bodies are scaled, the properties of the model are changed.
-    // The general rule is that you MUST recreate and initialize the system 
-    // when properties of the model change. We must do that here or
-    // we will be querying a stale system (e.g. wrong body properties!).
-    s = _model->initSystem();
-
-    // Now that the masses of the individual bodies have
-    // been scaled (if aPreserveMassDist == false), get the
-    // total mass and compare it to aFinalMass in order to
-    // determine how much to scale the body masses again,
-    // so that the total model mass comes out to aFinalMass.
-    if (aFinalMass > 0.0)
-    {
-        double mass = _model->getTotalMass(s);
-        if (mass > 0.0)
-        {
-            double factor = aFinalMass / mass;
-            for (int i = 0; i < _model->getBodySet().getSize(); i++){
-                _model->getBodySet().get(i).scaleMass(factor);
-            }
-            
-            // recreate system and update state after updating masses
-            s = _model->initSystem();
-
-            double newMass = _model->getTotalMass(s);
-            double normDiffMass = abs(aFinalMass - newMass) / aFinalMass;
-
-            // check if the difference in after scale mass and the specified 
-            // subject (target) mass is significant
-            if (normDiffMass > SimTK::SignificantReal) {
-                throw Exception("Model::scale() scaled model mass does not match specified subject mass.");
-            }
-        }
-    }
-    
-    // Now scale the joints.
-    _model->updJointSet().scale(aScaleSet);
-
-    // Now scale translational coupled coordinate constraints.
-    _model->updConstraintSet().scale(aScaleSet);
-
-    // Now scale the markers.
-    _model->updMarkerSet().scale(aScaleSet);
-
-    return true;
-}
-
 //=============================================================================
 // CONFIGURATION
 //=============================================================================
@@ -1038,7 +975,7 @@ void SimbodyEngine::scaleRotationalDofColumns(Storage &rStorage, double factor) 
 
 void SimbodyEngine::scaleRotationalDofColumns(TimeSeriesTable& table,
                                               double factor) const {
-    int ncols = table.getNumColumns();
+    size_t ncols = table.getNumColumns();
     if(ncols == 0)
         throw Exception("SimbodyEngine.scaleRotationalDofColumns: ERROR- storage has no labels, can't determine coordinate types for deg<->rad conversion",
                              __FILE__,__LINE__);
@@ -1052,7 +989,7 @@ void SimbodyEngine::scaleRotationalDofColumns(TimeSeriesTable& table,
     const CoordinateSet& coordinateSet = _model->getCoordinateSet();
     
     // first column is time, so skip
-    for (int i = 0; i < ncols; i++) {
+    for (size_t i = 0; i < ncols; i++) {
         const std::string& name = table.getColumnLabel(i);
         index = coordinateSet.getIndex(name);
         if (index < 0){

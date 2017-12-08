@@ -75,6 +75,22 @@ public:
     }
 };
 
+class InvalidComponentName : public Exception {
+public:
+    InvalidComponentName(const std::string& file,
+        size_t line,
+        const std::string& func,
+        const std::string& thisName,
+        const std::string& invalidChars,
+        const std::string& componentConcreteClassName) :
+        Exception(file, line, func) {
+        std::string msg = "Component '" + thisName + "' of type " +
+            componentConcreteClassName + " contains invalid characters of: '" +
+            invalidChars + "'.";
+        addMessage(msg);
+    }
+};
+
 class ComponentNotFoundOnSpecifiedPath : public Exception {
 public:
     ComponentNotFoundOnSpecifiedPath(const std::string& file,
@@ -106,6 +122,21 @@ public:
             "Verify that finalizeFromProperties() has been invoked on the " + 
             "root Component or that this Component is not a clone, which has " +
             "not been added to another Component.";
+        addMessage(msg);
+    }
+};
+
+class SubcomponentsWithDuplicateName : public Exception {
+public:
+    SubcomponentsWithDuplicateName(const std::string& file,
+        size_t line,
+        const std::string& func,
+        const std::string& thisName,
+        const std::string& duplicateName) :
+        Exception(file, line, func) {
+        std::string msg = "Component '" + thisName + "' has subcomponents " +
+            "with duplicate name '" + duplicateName + "'. "
+            "Please supply unique names for immediate subcomponents.";
         addMessage(msg);
     }
 };
@@ -600,8 +631,12 @@ public:
     template <typename T = Component>
     unsigned countNumComponents() const {
         unsigned count = 0u;
-        for (const auto& comp : getComponentList<T>())
+        const auto compList = getComponentList<T>();
+        auto it = compList.begin();
+        while (it != compList.end()) {
             ++count;
+            ++it;
+        }
         return count;
     }
 
@@ -614,16 +649,26 @@ public:
     friend class ComponentListIterator;
 
 
-    /** Get the complete (absolute) pathname for this Component to its 
-     * ancestral Component, which is the root of the tree to which this 
-     * Component belongs.
-     * For example: a Coordinate Component would have an absolute path name 
-     * like: `/arm26/elbow_r/flexion`. Accessing a Component by its 
-     * absolutePathName from root is guaranteed to be unique. */
-    std::string getAbsolutePathName() const;
+    /** Get the complete (absolute) pathname for this Component to its ancestral
+     * Component, which is the root of the tree to which this Component belongs.
+     * For example: a Coordinate Component would have an absolute path name
+     * like: `/arm26/elbow_r/flexion`. Accessing a Component by its
+     * absolutePathName from root is guaranteed to be unique. The
+     * absolutePathName is generated on-the-fly by traversing the ownership tree
+     * and, therefore, calling this method is not "free". */
+    std::string getAbsolutePathString() const;
 
+    /** Return a ComponentPath of the absolute path of this Component. 
+     * Note that this has more overhead than calling `getName()` because 
+     * it traverses up the tree to generate the absolute pathname (and its
+     * computational cost is thus a function of depth). Consider other 
+     * options if this is repeatedly called and efficiency is important.
+     * For instance, `getAbsolutePathString()` is faster if you only
+     * need the path as a string. */
+    ComponentPath getAbsolutePath() const;
 
-    /** Get the relative pathname of this Component with respect to another one */
+    /** Get the relative pathname of this Component with respect to another
+     * Component. */
     std::string getRelativePathName(const Component& wrt) const;
 
     /** Query if there is a component (of any type) at the specified
@@ -1235,9 +1280,15 @@ public:
 
     /**
      * %Set all values of the state variables allocated by this Component.
-     * Includes state variables allocated by its subcomponents.
+     * Includes state variables allocated by its subcomponents. Note, this
+     * method simply sets the values on the input State. If other conditions
+     * must be met (such as satisfying kinematic constraints for Coordinates,
+     * or fiber and tendon equilibrium for muscles) you must invoke the
+     * appropriate methods on Model (e.g. assemble() to satisfy constraints or
+     * equilibrateMuscles()) to satisfy these conditions starting from the
+     * State values provided by setStateVariableValues.
      *
-     * @param state   the State for which to get the value
+     * @param state   the State whose values are set
      * @param values  Vector of state variable values of length
      *                getNumStateVariables() in the order returned by
      *                getStateVariableNames()
@@ -1510,7 +1561,29 @@ public:
 
     template<typename C>
     void printSubcomponentInfo() const {
+
+        ComponentList<const C> compList = getComponentList<C>();
+
+        // Step through compList once to determine if there are any
+        // subcomponents and to find the longest concrete class name.
+        const std::string concreteClassName = this->getConcreteClassName();
+        unsigned numSubcomponents = 0;
+        size_t maxlen = concreteClassName.length();
+        for (const C& thisComp : compList) {
+            ++numSubcomponents;
+            auto len = thisComp.getConcreteClassName().length();
+            maxlen = std::max(maxlen, len);
+        }
+
+        if (numSubcomponents == 0) {
+            std::cout << "Component '" << getName()
+                      << "' has no subcomponents." << std::endl;
+            return;
+        }
+        maxlen += 4; //padding
+
         std::string className = SimTK::NiceTypeName<C>::namestr();
+        // Remove "OpenSim::", etc. if it exists.
         const std::size_t colonPos = className.rfind(":");
         if (colonPos != std::string::npos)
             className = className.substr(colonPos+1,
@@ -1520,26 +1593,16 @@ public:
                   << getName() << "' that are of type " << className << ":\n"
                   << std::endl;
 
-        ComponentList<const C> compList = getComponentList<C>();
-
-        // Step through compList once to find the longest concrete class name.
-        unsigned maxlen = 0;
-        for (const C& thisComp : compList) {
-            auto len = thisComp.getConcreteClassName().length();
-            maxlen = std::max(maxlen, static_cast<unsigned>(len));
-        }
-        maxlen += 4; //padding
-
-        std::cout << std::string(maxlen-getConcreteClassName().length(), ' ')
-                  << "[" + getConcreteClassName() + "]"
-                  << "  " << getAbsolutePathName() << std::endl;
+        std::cout << std::string(maxlen-concreteClassName.length(), ' ')
+                  << "[" << concreteClassName << "]"
+                  << "  " << getAbsolutePathString() << std::endl;
 
         // Step through compList again to print.
         for (const C& thisComp : compList) {
             const std::string thisClass = thisComp.getConcreteClassName();
             std::cout << std::string(maxlen-thisClass.length(), ' ') << "["
                       << thisClass << "]  ";
-            auto path = ComponentPath(thisComp.getAbsolutePathName());
+            auto path = thisComp.getAbsolutePath();
             std::cout << std::string((path.getNumPathLevels() - 1) * 4, ' ')
                       << "/" << path.getComponentName() << std::endl;
         }
@@ -2105,12 +2168,15 @@ protected:
     // End of System Creation and Access Methods.
     //@} 
 
-
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wunsupported-friend"
+#if defined(__clang__)
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Wunsupported-friend"
+#endif
     template<class C>
     friend void Socket<C>::findAndConnect(const Component& root);
-#pragma clang diagnostic pop
+#if defined(__clang__)
+    #pragma clang diagnostic pop
+#endif
 
     /** Utility method to find a component in the list of sub components of this
         component and any of their sub components, etc..., by name or state variable name.
@@ -2139,7 +2205,7 @@ protected:
             throw Exception(msg);
         }
 
-        ComponentPath thisAbsPath(getAbsolutePathName());
+        ComponentPath thisAbsPath = getAbsolutePath();
         ComponentPath pathToFind(name);
 
         const C* found = NULL;
@@ -2163,8 +2229,8 @@ protected:
         for (const C& comp : compsList) {
             // if a child of this Component, one should not need
             // to specify this Component's absolute path name
-            ComponentPath compAbsPath(comp.getAbsolutePathName());
-            ComponentPath thisAbsPathPlusSubname(getAbsolutePathName());
+            ComponentPath compAbsPath = comp.getAbsolutePath();
+            ComponentPath thisAbsPathPlusSubname = getAbsolutePath();
             thisAbsPathPlusSubname.pushBack(subname);
             if (compAbsPath == thisAbsPathPlusSubname) {
                 foundCs.push_back(&comp);
@@ -2252,10 +2318,10 @@ protected:
                 }
                 auto compsList = current->getComponentList<Component>();
                 // descend to next component in the path otherwise not found
-                ComponentPath currentAbsPathPlusSubpath(current->getAbsolutePathName());
+                ComponentPath currentAbsPathPlusSubpath = current->getAbsolutePath();
                 currentAbsPathPlusSubpath.pushBack(currentSubpath.toString());
                 for (const Component& comp : compsList) {
-                    ComponentPath compAbsPath(comp.getAbsolutePathName());
+                    ComponentPath compAbsPath = comp.getAbsolutePath();
                     std::string compName = comp.getName();
                     // Check if we're in the right component
                     if (compAbsPath == currentAbsPathPlusSubpath) {
@@ -2935,8 +3001,13 @@ void Socket<C>::findAndConnect(const Component& root) {
             comp =  &getOwner().template getComponent<C>(path.toString());
         }
     }
-    catch (const ComponentNotFoundOnSpecifiedPath&) {
-        // TODO leave out for hackathon std::cout << ex.getMessage() << std::endl;
+    catch (const ComponentNotFoundOnSpecifiedPath& ex) {
+        if (Object::getDebugLevel() > 0) {
+            // TODO once we fix how connections are established when building
+            // models programmatically, we should show this warning even for
+            // debug level 0.
+            std::cout << ex.getMessage() << std::endl;
+        }
         comp =  root.template findComponent<C>(path.toString());
     }
     if (comp)

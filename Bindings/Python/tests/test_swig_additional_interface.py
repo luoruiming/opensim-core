@@ -35,12 +35,15 @@ class TestSwigAddtlInterface(unittest.TestCase):
     
     def test_markAdopted2(self):
         a = osim.Model()
+        ground = a.getGround()
     
         # We just need the following not to cause a segfault.
     
         # Model add*
         pa = osim.PathActuator()
         pa.setName('pa')
+        pa.addNewPathPoint("pa-point1", ground, osim.Vec3(0.0,0.0,0.0))
+        pa.addNewPathPoint("pa-point2", ground, osim.Vec3(1.0,0.0,0.0))
         a.addForce(pa)
 
         probe = osim.Umberger2010MuscleMetabolicsProbe()
@@ -65,17 +68,17 @@ class TestSwigAddtlInterface(unittest.TestCase):
         orient_in_parent = osim.Vec3(0, 0, 0)
         loc_in_body = osim.Vec3(0, 0, 0)
         orient_in_body = osim.Vec3(0, 0, 0)
-        print "creating Weld Joint.."
+        print("creating Weld Joint..")
         joint = osim.WeldJoint("weld_joint",
                 a.getGround(),
                 loc_in_parent, orient_in_parent,
                 body,
                 loc_in_body, orient_in_parent)
-        print "adding a body .."
+        print("adding a body ..")
         a.addBody(body)
-        print "adding a joint .."
+        print("adding a joint ..")
         a.addJoint(joint)
-        print "Creating a ConstantDistanceConstraint.."
+        print("Creating a ConstantDistanceConstraint..")
         constr = osim.ConstantDistanceConstraint()
         constr.setBody1ByName("ground")
         constr.setBody1PointLocation(osim.Vec3(0, 0, 0))

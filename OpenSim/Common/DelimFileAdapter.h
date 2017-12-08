@@ -109,7 +109,7 @@ public:
     DelimFileAdapter* clone() const override;
 
     /** Key used for table associative array returned/accepted by write/read. */
-    static inline const std::string tableString();
+    static const std::string tableString();
 
     /** Name of the data type T (template parameter).                         */
     static inline std::string dataTypeName();
@@ -541,13 +541,11 @@ DelimFileAdapter<T>::extendWrite(const InputTables& absTables,
     std::ofstream out_stream{fileName};
 
     // First line of the stream is the header.
-    try {
+    if (table->getTableMetaData().hasKey("header")) {
         out_stream << table->
                       getTableMetaData().
                       getValueForKey("header").
                       template getValue<std::string>() << "\n";
-    } catch(KeyNotFound&) {
-        // No operation. Continue with other keys in table metadata.
     }
     // Write rest of the key-value pairs and end the header.
     for(const auto& key : table->getTableMetaDataKeys()) {

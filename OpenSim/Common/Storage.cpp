@@ -36,9 +36,26 @@
 #include "SimTKcommon.h"
 #include "GCVSpline.h"
 #include "StateVector.h"
+#include "STOFileAdapter.h"
+#include "TimeSeriesTable.h"
 
 using namespace OpenSim;
 using namespace std;
+
+void convertTableToStorage(const TimeSeriesTable& table, Storage& sto) {
+    sto.purge();
+    OpenSim::Array<std::string> labels("", (int)table.getNumColumns() + 1);
+    labels[0] = "time";
+    for (int i = 0; i < (int)table.getNumColumns(); ++i) {
+        labels[i + 1] = table.getColumnLabel(i);
+    }
+    sto.setColumnLabels(labels);
+    const auto& times = table.getIndependentColumn();
+    for (unsigned i_time = 0; i_time < table.getNumRows(); ++i_time) {
+        auto rowView = table.getRowAtIndex(i_time);
+        sto.append(times[i_time], SimTK::Vector(rowView.transpose()));
+    }
+}            
 
 
 //============================================================================
@@ -130,9 +147,14 @@ Storage::Storage(const string &aFileName, bool readHeadersOnly) :
     // Motion files from SIMM are in degrees
     if (_fileVersion < 1 && (0 == aFileName.compare (aFileName.length() - 4, 4, ".mot"))) _inDegrees = true;
     if (_fileVersion < 1) cout << ".. assuming rotations in " << (_inDegrees?"Degrees.":"Radians.") << endl;
-    if(_fileVersion > 1)
-      throw Exception{"Error: File version (" + std::to_string(_fileVersion) +
-                      ") not supported. Use STOFileAdapter instead."};
+    if(_fileVersion > 1) {
+        OPENSIM_THROW_IF(readHeadersOnly, Exception, 
+                "Cannot read headers only if STO version is greater than 1.");
+        TimeSeriesTable table = STOFileAdapter::read(aFileName);
+        convertTableToStorage(table, *this);
+        return;
+    }
+
     // IGNORE blank lines after header -- treat \r and \n as end of line chars
     while(fp->good()) {
         int c = fp->peek();
@@ -1268,7 +1290,7 @@ Storage::getColumnIndicesForIdentifier(const std::string& identifier) const
     return found;
 }
 
-TimeSeriesTable Storage::getAsTimeSeriesTable() const {
+TimeSeriesTable Storage::exportToTable() const {
     TimeSeriesTable table{};
 
     table.addTableMetaData("header", getName());
@@ -2287,28 +2309,24 @@ pad(int aPadSize)
     delete[] vecs;
 }
 
-//_____________________________________________________________________________
-/**
- * Smooth spline each of the columns in the storage.  Note that as a part
- * of this operation, the storage is resampled so that the statevectors are
- * at equal spacing.
- *
- * @param aOrder Order of the spline.
- * @param aCutoffFrequency Cutoff frequency.
- */
 void Storage::
 smoothSpline(int aOrder,double aCutoffFrequency)
 {
+    int size = getSize();
     double dtmin = getMinTimeStep();
+    double avgDt = (_storage[size-1].getTime() - _storage[0].getTime()) / (size-1);
 
-    if(dtmin<SimTK::Zero) {
+    if(dtmin<SimTK::Eps) {
         cout<<"Storage.SmoothSpline: storage cannot be resampled."<<endl;
         return;
     }
 
-    // RESAMPLE
-    dtmin = resample(dtmin,aOrder);
-    int size = getSize();
+    // RESAMPLE if the sampling interval is not uniform
+    if ((avgDt - dtmin) > SimTK::Eps) {
+        dtmin = resample(dtmin, aOrder);
+        size = getSize();
+    }
+
     if(size<(2*aOrder)) {
         cout<<"Storage.SmoothSpline: too few data points to filter."<<endl;
         return;
@@ -2331,29 +2349,24 @@ smoothSpline(int aOrder,double aCutoffFrequency)
     delete[] signal;
 }
 
-
-//_____________________________________________________________________________
-/**
- * Lowpass filter each of the columns in the storage.  Note that as a part
- * of this operation, the storage is resampled so that the statevectors are
- * at equal spacing.
- *
- * @param aOrder Order of the FIR filter.
- * @param aCutoffFrequency Cutoff frequency.
- */
 void Storage::
 lowpassIIR(double aCutoffFrequency)
 {
+    int size = getSize();
     double dtmin = getMinTimeStep();
+    double avgDt = (_storage[size-1].getTime() - _storage[0].getTime()) / (size-1);
 
-    if(dtmin<SimTK::Zero) {
+    if(dtmin<SimTK::Eps) {
         cout<<"Storage.lowpassIIR: storage cannot be resampled."<<endl;
         return;
     }
 
-    // RESAMPLE
-    dtmin = resample(dtmin,5);
-    int size = getSize();
+    // RESAMPLE if the sampling interval is not uniform
+    if ((avgDt - dtmin) > SimTK::Eps) {
+        dtmin = resample(dtmin, 5);
+        size = getSize();
+    }
+
     if(size<(4)) {
         cout<<"Storage.lowpassIIR: too few data points to filter."<<endl;
         return;
@@ -2373,29 +2386,24 @@ lowpassIIR(double aCutoffFrequency)
     delete[] signal;
 }
 
-
-//_____________________________________________________________________________
-/**
- * Lowpass filter each of the columns in the storage.  Note that as a part
- * of this operation, the storage is resampled so that the statevectors are
- * at equal spacing.
- *
- * @param aOrder Order of the FIR filter.
- * @param aCutoffFrequency Cutoff frequency.
- */
 void Storage::
 lowpassFIR(int aOrder,double aCutoffFrequency)
 {
+    int size = getSize();
     double dtmin = getMinTimeStep();
+    double avgDt = (_storage[size-1].getTime() - _storage[0].getTime()) / (size-1);
 
-    if(dtmin<SimTK::Zero) {
+    if (dtmin<SimTK::Eps) {
         cout<<"Storage.lowpassFIR: storage cannot be resampled."<<endl;
         return;
     }
 
-    // RESAMPLE
-    dtmin = resample(dtmin,5);
-    int size = getSize();
+    // RESAMPLE if the sampling interval is not uniform
+    if ((avgDt - dtmin) > SimTK::Eps) {
+        dtmin = resample(dtmin, 5);
+        size = getSize();
+    }
+
     if(size<(2*aOrder)) {
         cout<<"Storage.lowpassFIR: too few data points to filter."<<endl;
         return;

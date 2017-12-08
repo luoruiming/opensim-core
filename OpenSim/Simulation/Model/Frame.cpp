@@ -25,6 +25,7 @@
 // INCLUDES
 //=============================================================================
 #include "Frame.h"
+#include <OpenSim/Common/ScaleSet.h>
 
 //=============================================================================
 // STATICS
@@ -111,6 +112,16 @@ const SimTK::SpatialVec& Frame::getVelocityInGround(const State& s) const
         getCacheEntry(s, _velocityIndex)).get();
 }
 
+const SimTK::Vec3& Frame::getAngularVelocityInGround(const State& s) const
+{
+    return getVelocityInGround(s)[0];
+}
+
+const SimTK::Vec3& Frame::getLinearVelocityInGround(const State& s) const
+{
+    return getVelocityInGround(s)[1];
+}
+
 const SimTK::SpatialVec& Frame::getAccelerationInGround(const State& s) const
 {
     if (!getSystem().getDefaultSubsystem().
@@ -127,6 +138,16 @@ const SimTK::SpatialVec& Frame::getAccelerationInGround(const State& s) const
     return SimTK::Value<SpatialVec>::downcast(
         getSystem().getDefaultSubsystem().
         getCacheEntry(s, _accelerationIndex)).get();
+}
+
+const SimTK::Vec3& Frame::getAngularAccelerationInGround(const State& s) const
+{
+    return getAccelerationInGround(s)[0];
+}
+
+const SimTK::Vec3& Frame::getLinearAccelerationInGround(const State& s) const
+{
+    return getAccelerationInGround(s)[1];
 }
 
 void Frame::attachGeometry(OpenSim::Geometry* geom)
@@ -159,6 +180,30 @@ void Frame::attachGeometry(OpenSim::Geometry* geom)
 
     geom->setFrame(*this);
     updProperty_attached_geometry().adoptAndAppendValue(geom);
+}
+
+void Frame::scaleAttachedGeometry(const SimTK::Vec3& scaleFactors)
+{
+    for (int i = 0; i < getProperty_attached_geometry().size(); ++i) {
+        Geometry& geo = upd_attached_geometry(i);
+        geo.upd_scale_factors() = geo.get_scale_factors()
+                                  .elementwiseMultiply(scaleFactors);
+    }
+}
+
+void Frame::extendScale(const SimTK::State& s, const ScaleSet& scaleSet)
+{
+    Super::extendScale(s, scaleSet);
+
+    if (getProperty_attached_geometry().size() == 0)
+        return;
+
+    // Get scale factors (if an entry for the base Body exists).
+    const Vec3& scaleFactors = getScaleFactors(scaleSet, *this);
+    if (scaleFactors == ModelComponent::InvalidScaleFactors)
+        return;
+
+    scaleAttachedGeometry(scaleFactors);
 }
 
 //=============================================================================

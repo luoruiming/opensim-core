@@ -37,6 +37,7 @@
 #include "IKCoordinateTask.h"
 #include "IKTaskSet.h"
 #include <OpenSim/Analyses/StatesReporter.h>
+#include <OpenSim/Common/IO.h>
 //=============================================================================
 // STATICS
 //=============================================================================
@@ -245,15 +246,20 @@ bool MarkerPlacer::processModel(Model* aModel,
     */
     TimeSeriesTableVec3 staticPoseTable{aPathToSubject + _markerFileName};
     const auto& timeCol = staticPoseTable.getIndependentColumn();
-    auto numRowsInRange = std::count_if(timeCol.cbegin(),
-                                        timeCol.cend(),
-                                        [&] (const double& val) {
-                                            return val >= _timeRange[0] &&
-                                                   val <= _timeRange[1];
-                                        });
+
+    // Users often set a time range that purposely exceeds the range of
+    // their data with the mindset that all their data will be used.
+    // To allow for that, we have to narrow the provided range to data
+    // range, since the TimeSeriesTable will correctly throw that the 
+    // desired time exceeds the data range.
+    if (_timeRange[0] < timeCol.front())
+        _timeRange[0] = timeCol.front();
+    if (_timeRange[1] > timeCol.back())
+        _timeRange[1] = timeCol.back();
+
     const auto avgRow = staticPoseTable.averageRow(_timeRange[0],
                                                    _timeRange[1]);
-    for(int r = staticPoseTable.getNumRows() - 1; r > 0; --r)
+    for(size_t r = staticPoseTable.getNumRows() - 1; r > 0; --r)
         staticPoseTable.removeRowAtIndex(r);
     staticPoseTable.updRowAtIndex(0) = avgRow;
     
@@ -386,23 +392,33 @@ bool MarkerPlacer::processModel(Model* aModel,
     //_outputStorage->print("statesReporterOutputWithMarkers.sto");
 
     if(_printResultFiles) {
-        if (!_outputModelFileNameProp.getValueIsDefault())
-        {
-            aModel->print(aPathToSubject + _outputModelFileName);
-            cout << "Wrote model file " << _outputModelFileName << " from model " << aModel->getName() << endl;
-        }
+        std::string savedCwd = IO::getCwd();
+        IO::chDir(aPathToSubject);
 
-        if (!_outputMarkerFileNameProp.getValueIsDefault())
-        {
-            aModel->writeMarkerFile(aPathToSubject + _outputMarkerFileName);
-            cout << "Wrote marker file " << _outputMarkerFileName << " from model " << aModel->getName() << endl;
+        try { // writing can throw an exception
+            if (_outputModelFileNameProp.isValidFileName()) {
+                aModel->print(aPathToSubject + _outputModelFileName);
+                cout << "Wrote model file " << _outputModelFileName <<
+                    " from model " << aModel->getName() << endl;
+            }
+
+            if (_outputMarkerFileNameProp.isValidFileName()) {
+                aModel->writeMarkerFile(aPathToSubject + _outputMarkerFileName);
+                cout << "Wrote marker file " << _outputMarkerFileName <<
+                    " from model " << aModel->getName() << endl;
+            }
+
+            if (_outputMotionFileNameProp.isValidFileName()) {
+                _outputStorage->print(aPathToSubject + _outputMotionFileName,
+                    "w", "File generated from solving marker data for model "
+                    + aModel->getName());
+            }
+        } // catch the exception so we can reset the working directory
+        catch (std::exception& ex) {
+            IO::chDir(savedCwd);
+            OPENSIM_THROW_FRMOBJ(Exception, ex.what());
         }
-        
-        if (!_outputMotionFileNameProp.getValueIsDefault())
-        {
-            _outputStorage->print(aPathToSubject + _outputMotionFileName, 
-                "w", "File generated from solving marker data for model "+aModel->getName());
-        }
+        IO::chDir(savedCwd);
     }
 
     return true;

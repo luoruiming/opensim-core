@@ -1,6 +1,6 @@
 project(exampleMuscle)
 
-cmake_minimum_required(VERSION 2.8.6)
+cmake_minimum_required(VERSION 3.2)
 
 # Settings.
 # ---------
@@ -8,9 +8,8 @@ set(TARGET exampleMuscle CACHE TYPE STRING)
 set(OPENSIM_INSTALL_DIR $ENV{OPENSIM_HOME}
         CACHE PATH "Top-level directory of OpenSim install")
 
-# Find and hook up to OpenSim.
-# ----------------------------
 # OpenSim uses C++11 language features.
+<<<<<<< HEAD
 if("${CMAKE_CXX_COMPILER_ID}" MATCHES "GNU" OR
         "${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
     # Using C++11 on OSX requires using libc++ instead of libstd++.
@@ -29,11 +28,14 @@ if("${CMAKE_CXX_COMPILER_ID}" MATCHES "GNU" OR
         set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++11")
     endif()
 endif()
+=======
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+>>>>>>> upstream/master
 
+# Find and hook up to OpenSim.
+# ----------------------------
 find_package(OpenSim REQUIRED PATHS "${OPENSIM_INSTALL_DIR}")
-
-include_directories(${OpenSim_INCLUDE_DIRS})
-link_directories(${OpenSim_LIB_DIR})
 
 # Configure this project.
 # -----------------------

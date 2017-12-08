@@ -394,12 +394,20 @@ public:
     /** Check that the underlying computational system representing the model is valid. 
         That is, is the system ready for performing calculations. */
     bool isValidSystem() const;
+
     /**
-     * create a storage (statesStorage) that has same label order as model's states
-     * with values populated from originalStorage, 0.0 for those states unspecified
-     * in the originalStorage.
+     * Create a storage (statesStorage) that has same label order as model's states
+     * with values populated from originalStorage. Use the default state value if
+     * a state is unspecified in the originalStorage. If warnUnspecifiedStates is
+     * true then a warning is printed that includes the default value used for
+     * the state value unspecified in originalStorage. The input originalStorage 
+     * must be in meters or radians for Coordinate values and their speeds
+     * (m/s, rad/s) otherwise an Exception is thrown.
      */
-    void formStateStorage(const Storage& originalStorage, Storage& statesStorage);
+    void formStateStorage(const Storage& originalStorage, 
+                          Storage& statesStorage,
+                          bool warnUnspecifiedStates = true) const;
+
     void formQStorage(const Storage& originalStorage, Storage& qStorage);
     
     /**
@@ -883,9 +891,17 @@ public:
     //--------------------------------------------------------------------------
     MarkerSet& updMarkerSet() { return upd_MarkerSet(); }
     const MarkerSet& getMarkerSet() const { return get_MarkerSet(); }
-    int replaceMarkerSet(const SimTK::State& s, const MarkerSet& aMarkerSet);
+
     void writeMarkerFile(const std::string& aFileName);
-    void updateMarkerSet(MarkerSet& aMarkerSet);
+
+    /**
+    * Update the markers in the model by appending the ones in the
+    * passed-in marker set. If the marker of the same name exists
+    * in the model, then replace it.
+    *
+    * @param newMarkerSet the set of markers used to update the model's set.
+    */
+    void updateMarkerSet(MarkerSet& newMarkerSet);
     int deleteUnusedMarkers(const Array<std::string>& aMarkerNames);
  
     /**
@@ -917,19 +933,24 @@ public:
     /**
      * Scale the model.
      *
-     * @param state     State containing parameter values that might be 
-     *                  modified here.
-     * @param scaleSet  The set of XYZ scale factors for the bodies.
-     * @param finalMass The mass that the scaled model should have.
-     * @param preserveMassDist 
-     *                  Whether or not the masses of the individual bodies 
-     *                  should be scaled with the body scale factors.
-     * @returns         Whether or not scaling was successful.
+     * @param state      State containing parameter values that might be
+     *                   modified here.
+     * @param scaleSet   The set of XYZ scale factors for the bodies.
+     * @param preserveMassDist
+     *                   Whether the masses of the bodies should be scaled by
+     *                   the scale factors. If `false`, body masses will be
+     *                   adjusted only if `finalMass` has been specified; if
+     *                   `true`, body masses will be scaled by the product of
+     *                   the body's scale factors (and then a second time if
+     *                   `finalMass` has been specified). Inertias are always
+     *                   updated to reflect changes in body dimensions.
+     * @param finalMass  The total mass that the scaled model should have.
+     * @returns          Whether or not scaling was successful.
      */
-    bool scale(SimTK::State&    state, 
-               const ScaleSet&  scaleSet, 
-               double           finalMass = -1.0, 
-               bool             preserveMassDist = false);
+    bool scale(SimTK::State&    state,
+               const ScaleSet&  scaleSet,
+               bool             preserveMassDist,
+               double           finalMass = -1.0);
 
     //--------------------------------------------------------------------------
     // PRINT

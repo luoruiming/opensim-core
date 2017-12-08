@@ -112,6 +112,10 @@ public:
     // make this constructor explicit so you don't get implicit casting of int to Storage
     explicit Storage(int aCapacity=Storage_DEFAULT_CAPACITY,
         const std::string &aName="UNKNOWN");
+    /** Load a STO file.
+    <b>Version 2 STO files</b>: This constructor can read version 1 and version 2
+    STO files. However, most metadata from a version 2 STO file will not be
+    preserved. Use STOFileAdapter and TimeSeriesTable instead, if possible. */
     Storage(const std::string &aFileName, bool readHeadersOnly=false) SWIG_DECLARE_EXCEPTION;
     Storage(const Storage &aStorage,bool aCopyData=true);
     Storage(const Storage &aStorage,int aStateIndex,int aN,
@@ -191,8 +195,9 @@ public:
     int getDataColumn(const std::string& columnName,double *&rData) const;
     void getDataColumn(const std::string& columnName, Array<double>& data, double startTime=0.0) override;
 
-    /** Get a TimeSeriesTable out of the Storage.                             */
-    TimeSeriesTable getAsTimeSeriesTable() const;
+    /** Convert to a TimeSeriesTable. This may be useful if you need to use
+    parts of the API that require a TimeSeriesTable instead of a Storage. */
+    TimeSeriesTable exportToTable() const;
 
 #ifndef SWIG
     /** A data block, like a vector for a force, point, etc... will span multiple "columns"
@@ -286,9 +291,34 @@ public:
     int computeAverage(int aN,double *aAve) const;
     int computeAverage(double aTI,double aTF,int aN,double *aAve) const;
     void pad(int aPadSize);
-    void smoothSpline(int aOrder,double aCutoffFrequency);
-    void lowpassIIR(double aCutoffFequency);
-    void lowpassFIR(int aOrder,double aCutoffFequency);
+    /**
+    * Smooth spline each of the columns in the storage.  Note that as a part
+    * of this operation, the storage is re-sampled to obtain uniform samples
+    * unless its time steps are already uniform.
+    *
+    * @param order Order of the spline.
+    * @param cutoffFrequency Cutoff frequency of the smoothing filter.
+    */
+    void smoothSpline(int order,double cutoffFrequency);
+    /**
+    * Low-pass filter each of the columns in the storage using a 3rd order
+    * lowpass IIR Butterworth digital filter. Note that as a part of this
+    * operation, the storage is re-sampled to obtain uniform samples unless
+    * its time steps are already uniform.
+    *
+    * @param cutoffFrequency Cutoff frequency of the lowpass filter.
+    */
+    void lowpassIIR(double cutoffFrequency);
+    /**
+    * Lowpass filter each of the columns in the storage using an FIR non-
+    * recursive digital filter. Note that as a part of this operation, the
+    * storage is re-sampled to obtain uniform samples unless its time steps
+    * are already uniform.
+    *
+    * @param order Order of the FIR filter.
+    * @param cutoffFrequency Cutoff frequency.
+    */
+    void lowpassFIR(int order, double cutoffFrequency);
     // Append rows of two storages at matched time
     void addToRdStorage(Storage& rStorage, double aStartTime, double aEndTime);
     //--------------------------------------------------------------------------

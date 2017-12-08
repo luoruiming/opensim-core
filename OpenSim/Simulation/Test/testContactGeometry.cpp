@@ -133,15 +133,15 @@ int testBouncingBall(bool useMesh, const std::string mesh_filename)
     ContactHalfSpace *floor = new ContactHalfSpace(Vec3(0),
                                                    Vec3(0, 0, -0.5*SimTK_PI),
                                                    ground,
-                                                   "ground");
+                                                   "floor");
     osimModel->addContactGeometry(floor);
     OpenSim::ContactGeometry* geometry;
     if (useMesh){
         geometry = new ContactMesh(mesh_filename, Vec3(0), Vec3(0),
-                                   ball, "ball");
+                                   ball, "sphere");
     }
     else
-        geometry = new ContactSphere(radius, Vec3(0), ball, "ball");
+        geometry = new ContactSphere(radius, Vec3(0), ball, "sphere");
     osimModel->addContactGeometry(geometry);
 
     OpenSim::Force* force;
@@ -151,8 +151,8 @@ int testBouncingBall(bool useMesh, const std::string mesh_filename)
         auto* contactParams =
             new OpenSim::ElasticFoundationForce::ContactParameters(
                     1.0e6/radius, 1e-5, 0.0, 0.0, 0.0);
-        contactParams->addGeometry("ball");
-        contactParams->addGeometry("ground");
+        contactParams->addGeometry("sphere");
+        contactParams->addGeometry("floor");
         force = new OpenSim::ElasticFoundationForce(contactParams);
         osimModel->addForce(force);
     }
@@ -162,8 +162,8 @@ int testBouncingBall(bool useMesh, const std::string mesh_filename)
         auto* contactParams =
             new OpenSim::HuntCrossleyForce::ContactParameters(
                     1.0e6, 1e-5, 0.0, 0.0, 0.0);
-        contactParams->addGeometry("ball");
-        contactParams->addGeometry("ground");
+        contactParams->addGeometry("sphere");
+        contactParams->addGeometry("floor");
         force = new OpenSim::HuntCrossleyForce(contactParams);
         osimModel->addForce(force);
     }
@@ -191,10 +191,11 @@ int testBouncingBall(bool useMesh, const std::string mesh_filename)
     integrator.setAccuracy(integ_accuracy);
     Manager manager(*osimModel, integrator);
     osim_state.setTime(0.0);
+    manager.initialize(osim_state);
 
     for (unsigned int i = 0; i < duration/interval; ++i)
     {
-        manager.integrate(osim_state, (i + 1)*interval);
+        osim_state = manager.integrate((i + 1)*interval);
         double time = osim_state.getTime();
 
         osimModel->getMultibodySystem().realize(osim_state, Stage::Acceleration);
@@ -327,7 +328,8 @@ int testBallToBallContact(bool useElasticFoundation, bool useMesh1, bool useMesh
     integrator.setMaximumStepSize(100*integ_accuracy);
     Manager manager(*osimModel, integrator);
     osim_state.setTime(0.0);
-    manager.integrate(osim_state, duration);
+    manager.initialize(osim_state);
+    osim_state = manager.integrate(duration);
 
     kin->printResults(prefix);
     reporter->printResults(prefix);
@@ -492,7 +494,8 @@ void testIntermediateFrames() {
         integrator.setAccuracy(integ_accuracy);
         Manager manager(model, integrator);
         state.setTime(0.0);
-        manager.integrate(state, 1.0);
+        manager.initialize(state);
+        state = manager.integrate(1.0);
 
         return state;
     };
