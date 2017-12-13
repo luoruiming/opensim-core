@@ -1,4 +1,4 @@
-#ifndef OPENSIM_UMBERGER2010_METABOLIC_POWER_PROBE_H_
+﻿#ifndef OPENSIM_UMBERGER2010_METABOLIC_POWER_PROBE_H_
 #define OPENSIM_UMBERGER2010_METABOLIC_POWER_PROBE_H_
 /* -------------------------------------------------------------------------- *
  *               OpenSim:  Umberger2010MuscleMetabolicsProbe.h                *

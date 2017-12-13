@@ -1,4 +1,4 @@
-#include <OpenSim/OpenSim.h>
+﻿#include <OpenSim/OpenSim.h>
 #include <OpenSim/Common/Reporter.h>
 
 using namespace OpenSim;

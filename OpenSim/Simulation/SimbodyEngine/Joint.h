@@ -1,4 +1,4 @@
-#ifndef OPENSIM_JOINT_H_
+﻿#ifndef OPENSIM_JOINT_H_
 #define OPENSIM_JOINT_H_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  Joint.h                               *

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ACTUATOR_FORCE_PROBE_H_
+﻿#ifndef OPENSIM_ACTUATOR_FORCE_PROBE_H_
 #define OPENSIM_ACTUATOR_FORCE_PROBE_H_
 /* -------------------------------------------------------------------------- *
 *                       OpenSim:  ActuatorForceProbe.h                       *

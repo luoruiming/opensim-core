@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MCKIBBEN_ACTUATOR_H_
+﻿#ifndef OPENSIM_MCKIBBEN_ACTUATOR_H_
 #define OPENSIM_MCKIBBEN_ACTUATOR_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  McKibbenActuator.h                        *

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MOMENTARM_SOLVER_H_
+﻿#ifndef OPENSIM_MOMENTARM_SOLVER_H_
 #define OPENSIM_MOMENTARM_SOLVER_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  MomentArmSolver.h                         *

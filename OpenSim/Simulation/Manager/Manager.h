@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MANAGER_H_
+﻿#ifndef OPENSIM_MANAGER_H_
 #define OPENSIM_MANAGER_H_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  Manager.h                             *

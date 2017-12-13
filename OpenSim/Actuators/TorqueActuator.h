@@ -1,4 +1,4 @@
-#ifndef OPENSIM_TORQUE_ACTUATOR_H_
+﻿#ifndef OPENSIM_TORQUE_ACTUATOR_H_
 #define OPENSIM_TORQUE_ACTUATOR_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  TorqueActuator.h                         *

@@ -1,4 +1,4 @@
-#ifndef __FunctionThresholdCondition_h__
+﻿#ifndef __FunctionThresholdCondition_h__
 #define __FunctionThresholdCondition_h__
 /* -------------------------------------------------------------------------- *
  *                   OpenSim:  FunctionThresholdCondition.h                   *

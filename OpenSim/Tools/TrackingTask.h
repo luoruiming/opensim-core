@@ -1,4 +1,4 @@
-#ifndef TrackingTask_h__
+﻿#ifndef TrackingTask_h__
 #define TrackingTask_h__
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  TrackingTask.h                          *

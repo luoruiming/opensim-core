@@ -1,4 +1,4 @@
-#ifndef StateTrackingTask_h__
+﻿#ifndef StateTrackingTask_h__
 #define StateTrackingTask_h__
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  StateTrackingTask.h                        *

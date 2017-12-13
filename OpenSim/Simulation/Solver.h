@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SOLVER_H_
+﻿#ifndef OPENSIM_SOLVER_H_
 #define OPENSIM_SOLVER_H_
 /* -------------------------------------------------------------------------- *
  *                             OpenSim:  Solver.h                             *

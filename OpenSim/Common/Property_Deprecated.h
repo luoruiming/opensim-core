@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PROPERTY_DEPRECATED_H_
+﻿#ifndef OPENSIM_PROPERTY_DEPRECATED_H_
 #define OPENSIM_PROPERTY_DEPRECATED_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  Property_Deprecated.h                       *

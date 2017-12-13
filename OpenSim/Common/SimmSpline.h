@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SIMMSPLINE_H_
+﻿#ifndef OPENSIM_SIMMSPLINE_H_
 #define OPENSIM_SIMMSPLINE_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  SimmSpline.h                           *

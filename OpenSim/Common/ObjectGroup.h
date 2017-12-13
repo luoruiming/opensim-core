@@ -1,4 +1,4 @@
-#ifndef __ObjectGroup_h__
+﻿#ifndef __ObjectGroup_h__
 #define __ObjectGroup_h__
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  ObjectGroup.h                           *

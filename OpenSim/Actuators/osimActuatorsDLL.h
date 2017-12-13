@@ -1,4 +1,4 @@
-#ifndef _ActuatorsDLL_h_
+﻿#ifndef _ActuatorsDLL_h_
 #define _ActuatorsDLL_h_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  osimActuatorsDLL.h                        *

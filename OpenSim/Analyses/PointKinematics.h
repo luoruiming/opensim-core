@@ -1,4 +1,4 @@
-#ifndef _PointKinematics_h_
+﻿#ifndef _PointKinematics_h_
 #define _PointKinematics_h_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  PointKinematics.h                         *

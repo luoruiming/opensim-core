@@ -1,4 +1,4 @@
-#ifndef OPENSIM_FRAME_H_
+﻿#ifndef OPENSIM_FRAME_H_
 #define OPENSIM_FRAME_H_
 /* -------------------------------------------------------------------------- *
  *                              OpenSim:  Frame.h                             *

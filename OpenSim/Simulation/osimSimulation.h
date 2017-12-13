@@ -1,4 +1,4 @@
-#ifndef _osimSimulation_h_
+﻿#ifndef _osimSimulation_h_
 #define _osimSimulation_h_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  osimSimulation.h                         *

@@ -1,4 +1,4 @@
-/* obstack.h - object stack macros
+﻿/* obstack.h - object stack macros
    Copyright (C) 1988 Free Software Foundation, Inc.
 
 This program is free software; you can redistribute it and/or modify it

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_FORCE_SET_H_
+﻿#ifndef OPENSIM_FORCE_SET_H_
 #define OPENSIM_FORCE_SET_H_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  ForceSet.h                            *

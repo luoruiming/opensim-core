@@ -1,4 +1,4 @@
-#ifndef _StateVector_h_
+﻿#ifndef _StateVector_h_
 #define _StateVector_h_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  StateVector.h                           *

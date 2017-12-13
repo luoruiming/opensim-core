@@ -1,4 +1,4 @@
-#ifndef __MAKE_DEPEND_H__
+﻿#ifndef __MAKE_DEPEND_H__
 #define __MAKE_DEPEND_H__
 /*
  * Copyright 1991 Silicon Graphics, Inc.  All rights reserved.

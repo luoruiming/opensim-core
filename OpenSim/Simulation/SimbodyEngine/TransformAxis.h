@@ -1,4 +1,4 @@
-#ifndef OPENSIM_TRANSFORM_AXIS_H_
+﻿#ifndef OPENSIM_TRANSFORM_AXIS_H_
 #define OPENSIM_TRANSFORM_AXIS_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  TransformAxis.h                          *

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_COORDINATE_ACTUATOR_H_
+﻿#ifndef OPENSIM_COORDINATE_ACTUATOR_H_
 #define OPENSIM_COORDINATE_ACTUATOR_H_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  CoordinateActuator.h                       *

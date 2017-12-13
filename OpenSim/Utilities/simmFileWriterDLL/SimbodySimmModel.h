@@ -1,4 +1,4 @@
-#ifndef __SimbodySimmModel_h__
+﻿#ifndef __SimbodySimmModel_h__
 #define __SimbodySimmModel_h__
 /* -------------------------------------------------------------------------- *
  *                            SimbodySimmModel.cpp                            *

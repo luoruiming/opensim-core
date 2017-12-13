@@ -1,4 +1,4 @@
-#ifndef OPENSIM_FORCE_VELOCITY_INVERSE_CURVE_H_
+﻿#ifndef OPENSIM_FORCE_VELOCITY_INVERSE_CURVE_H_
 #define OPENSIM_FORCE_VELOCITY_INVERSE_CURVE_H_
 /* -------------------------------------------------------------------------- *
  *                   OpenSim:  ForceVelocityInverseCurve.h                    *

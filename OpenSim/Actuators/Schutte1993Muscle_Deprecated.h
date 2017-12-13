@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SCHUTTE_1993_MUSCLE_DEPRECATED_H_
+﻿#ifndef OPENSIM_SCHUTTE_1993_MUSCLE_DEPRECATED_H_
 #define OPENSIM_SCHUTTE_1993_MUSCLE_DEPRECATED_H_
 /* -------------------------------------------------------------------------- *
  *                  OpenSim:  Schutte1993Muscle_Deprecated.h                  *

@@ -1,4 +1,4 @@
-#ifndef CMC_ACTUATOR_SUBSYSTEM_H_
+﻿#ifndef CMC_ACTUATOR_SUBSYSTEM_H_
 #define CMC_ACTUATOR_SUBSYSTEM_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  CMCActuatorSubsystem.h                      *

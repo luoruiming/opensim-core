@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONTACT_MESH_H_
+﻿#ifndef OPENSIM_CONTACT_MESH_H_
 #define OPENSIM_CONTACT_MESH_H_ 
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  ContactMesh.h                           *

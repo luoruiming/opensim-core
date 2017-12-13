@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONSTANT_MUSCLE_ACTIVATION_H_
+﻿#ifndef OPENSIM_CONSTANT_MUSCLE_ACTIVATION_H_
 #define OPENSIM_CONSTANT_MUSCLE_ACTIVATION_H_
 /* -------------------------------------------------------------------------- *
  *                    OpenSim:  ConstantMuscleActivation.h                    *

@@ -1,4 +1,4 @@
-#ifndef _DebugUtilities_h_
+﻿#ifndef _DebugUtilities_h_
 #define _DebugUtilities_h_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  DebugUtilities.h                         *

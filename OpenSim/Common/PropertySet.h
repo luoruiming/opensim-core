@@ -1,4 +1,4 @@
-#ifndef _PropertySet_h_
+﻿#ifndef _PropertySet_h_
 #define _PropertySet_h_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  PropertySet.h                           *

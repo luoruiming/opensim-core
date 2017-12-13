@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SINE_H_
+﻿#ifndef OPENSIM_SINE_H_
 #define OPENSIM_SINE_H_
 /* -------------------------------------------------------------------------- *
  *                              OpenSim:  Sine.h                              *

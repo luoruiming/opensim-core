@@ -1,4 +1,4 @@
-#ifndef __UnilateralConstraint_h__
+﻿#ifndef __UnilateralConstraint_h__
 #define __UnilateralConstraint_h__
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  UnilateralConstraint.h                      *

@@ -1,4 +1,4 @@
-#ifndef _MuscleAnalysis_h_
+﻿#ifndef _MuscleAnalysis_h_
 #define _MuscleAnalysis_h_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  MuscleAnalysis.h                         *

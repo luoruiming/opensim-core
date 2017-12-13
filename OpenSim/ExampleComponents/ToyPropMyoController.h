@@ -1,4 +1,4 @@
-#ifndef OPENSIM_TOY_PROP_MYO_CONTROLLER_H_
+﻿#ifndef OPENSIM_TOY_PROP_MYO_CONTROLLER_H_
 #define OPENSIM_TOY_PROP_MYO_CONTROLLER_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim: ToyPropMyoController.h                       *

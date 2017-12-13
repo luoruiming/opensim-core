@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SMOOTHSEGMENTEDFUNCTIONFACTORY_H_
+﻿#ifndef OPENSIM_SMOOTHSEGMENTEDFUNCTIONFACTORY_H_
 #define OPENSIM_SMOOTHSEGMENTEDFUNCTIONFACTORY_H_
 /* -------------------------------------------------------------------------- *
  *                 OpenSim:  SmoothSegmentedFunctionFactory.h                 *

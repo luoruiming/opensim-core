@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MUSCLE_ACTIVATION_DYNAMICS_H_
+﻿#ifndef OPENSIM_MUSCLE_ACTIVATION_DYNAMICS_H_
 #define OPENSIM_MUSCLE_ACTIVATION_DYNAMICS_H_
 /* -------------------------------------------------------------------------- *
  *                    OpenSim:  MuscleActivationDynamics.h                    *

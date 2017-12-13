@@ -1,4 +1,4 @@
-#ifndef _osimExamplecomponentsDLL_h_
+﻿#ifndef _osimExamplecomponentsDLL_h_
 #define _osimExamplecomponentsDLL_h_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  osimExamplecomponentsDLL.h                 *

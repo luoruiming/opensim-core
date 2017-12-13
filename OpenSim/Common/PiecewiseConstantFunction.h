@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PIECEWISE_CONSTANT_FUNCTION_H_
+﻿#ifndef OPENSIM_PIECEWISE_CONSTANT_FUNCTION_H_
 #define OPENSIM_PIECEWISE_CONSTANT_FUNCTION_H_
 /* -------------------------------------------------------------------------- *
  *                   OpenSim:  PiecewiseConstantFunction.h                    *

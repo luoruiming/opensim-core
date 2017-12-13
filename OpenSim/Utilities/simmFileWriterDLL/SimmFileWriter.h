@@ -1,4 +1,4 @@
-#ifndef __SimmFileWriter_h__
+﻿#ifndef __SimmFileWriter_h__
 #define __SimmFileWriter_h__
 /* -------------------------------------------------------------------------- *
  *                              SimmFileWriter.h                              *

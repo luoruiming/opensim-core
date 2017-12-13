@@ -1,4 +1,4 @@
-#ifndef OPENSIM_VECTOR_FUNCTION_FOR_ACTUATORS_H_
+﻿#ifndef OPENSIM_VECTOR_FUNCTION_FOR_ACTUATORS_H_
 #define OPENSIM_VECTOR_FUNCTION_FOR_ACTUATORS_H_
 /* -------------------------------------------------------------------------- *
  *                   OpenSim:  VectorFunctionForActuators.h                   *

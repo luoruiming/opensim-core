@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ELASTIC_FOUNDATION_FORCE_H_
+﻿#ifndef OPENSIM_ELASTIC_FOUNDATION_FORCE_H_
 #define OPENSIM_ELASTIC_FOUNDATION_FORCE_H_
 /* -------------------------------------------------------------------------- *
  *                     OpenSim:  ElasticFoundationForce.h                     *

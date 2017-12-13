@@ -1,4 +1,4 @@
-#ifndef OPENSIM_COORDINATE_COUPLER_CONSTRAINT_H_
+﻿#ifndef OPENSIM_COORDINATE_COUPLER_CONSTRAINT_H_
 #define OPENSIM_COORDINATE_COUPLER_CONSTRAINT_H_
 /* -------------------------------------------------------------------------- *
  *                  OpenSim:  CoordinateCouplerConstraint.h                   *

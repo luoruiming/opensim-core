@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PROBE_SET_H_
+﻿#ifndef OPENSIM_PROBE_SET_H_
 #define OPENSIM_PROBE_SET_H_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  ProbeSet.h                            *

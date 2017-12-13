@@ -1,4 +1,4 @@
-#ifndef __ContactGeometrySet_h__
+﻿#ifndef __ContactGeometrySet_h__
 #define __ContactGeometrySet_h__
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  ContactGeometrySet.h                       *

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_LINEAR_FUNCTION_H_
+﻿#ifndef OPENSIM_LINEAR_FUNCTION_H_
 #define OPENSIM_LINEAR_FUNCTION_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  LinearFunction.h                         *

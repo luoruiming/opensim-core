@@ -1,4 +1,4 @@
-// Important note: Have to include OpenSim before
+﻿// Important note: Have to include OpenSim before
 // xsens because otherwise there will be compiler
 // errors in Simbody headers. This happens because
 // xsens sysmbols are in global namespace.

@@ -1,4 +1,4 @@
-#ifndef __DynamicsTool_h__
+﻿#ifndef __DynamicsTool_h__
 #define __DynamicsTool_h__
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  DynamicsTool.h                          *

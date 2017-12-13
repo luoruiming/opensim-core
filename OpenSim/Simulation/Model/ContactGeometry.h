@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONTACT_GEOMETRY_H_
+﻿#ifndef OPENSIM_CONTACT_GEOMETRY_H_
 #define OPENSIM_CONTACT_GEOMETRY_H_ 
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  ContactGeometry.h                         *

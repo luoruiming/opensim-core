@@ -1,4 +1,4 @@
-#ifndef OPENSIM_FORCE_ADAPTER_H_
+﻿#ifndef OPENSIM_FORCE_ADAPTER_H_
 #define OPENSIM_FORCE_ADAPTER_H_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  ForceAdapter.h                          *

@@ -1,4 +1,4 @@
-#ifndef _ForceReporter_h_
+﻿#ifndef _ForceReporter_h_
 #define _ForceReporter_h_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  ForceReporter.h                          *

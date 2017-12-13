@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PROPERTY_DBL_ARRAY_H_
+﻿#ifndef OPENSIM_PROPERTY_DBL_ARRAY_H_
 #define OPENSIM_PROPERTY_DBL_ARRAY_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  PropertyDblArray.h                        *

@@ -1,4 +1,4 @@
-#ifndef _MarkerPair_h_
+﻿#ifndef _MarkerPair_h_
 #define _MarkerPair_h_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  MarkerPair.h                           *

@@ -1,4 +1,4 @@
-#ifndef _REGISTERTYPES_OSIMEXAMPLECOMPONENTS_H_
+﻿#ifndef _REGISTERTYPES_OSIMEXAMPLECOMPONENTS_H_
 #define _REGISTERTYPES_OSIMEXAMPLECOMPONENTS_H_
 /* -------------------------------------------------------------------------- *
  *                  OpenSim:  RegisterTypes_osimExampleComponents.h           *

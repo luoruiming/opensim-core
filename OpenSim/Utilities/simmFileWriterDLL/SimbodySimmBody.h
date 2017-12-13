@@ -1,4 +1,4 @@
-#ifndef __SimbodySimmBody_h__
+﻿#ifndef __SimbodySimmBody_h__
 #define __SimbodySimmBody_h__
 /* -------------------------------------------------------------------------- *
  *                           SimbodySimmBody.h                                *

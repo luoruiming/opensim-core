@@ -1,4 +1,4 @@
-#ifndef OPENSIM_HUNT_CROSSLEY_FORCE_H_
+﻿#ifndef OPENSIM_HUNT_CROSSLEY_FORCE_H_
 #define OPENSIM_HUNT_CROSSLEY_FORCE_H_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  HuntCrossleyForce.h                        *

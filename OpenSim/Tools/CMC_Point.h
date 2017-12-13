@@ -1,4 +1,4 @@
-#ifndef CMCPoint_h__
+﻿#ifndef CMCPoint_h__
 #define CMCPoint_h__
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  CMC_Point.h                            *

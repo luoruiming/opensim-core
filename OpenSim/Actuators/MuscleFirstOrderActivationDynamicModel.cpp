@@ -1,4 +1,4 @@
-/* -------------------------------------------------------------------------- *
+﻿/* -------------------------------------------------------------------------- *
  *            OpenSim:  MuscleFirstOrderActivationDynamicModel.cpp            *
  * -------------------------------------------------------------------------- *
  * The OpenSim API is a toolkit for musculoskeletal modeling and simulation.  *

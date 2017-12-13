@@ -1,4 +1,4 @@
-#ifndef _RootSolver_h_
+﻿#ifndef _RootSolver_h_
 #define _RootSolver_h_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  RootSolver.h                           *

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_FATIGABLE_MUSCLE_H_
+﻿#ifndef OPENSIM_FATIGABLE_MUSCLE_H_
 #define OPENSIM_FATIGABLE_MUSCLE_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  FatigableMuscle.h                         *

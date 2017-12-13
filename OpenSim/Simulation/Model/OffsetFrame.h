@@ -1,4 +1,4 @@
-#ifndef OPENSIM_OFFSET_FRAME_H_
+﻿#ifndef OPENSIM_OFFSET_FRAME_H_
 #define OPENSIM_OFFSET_FRAME_H_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  OffsetFrame.h                           *

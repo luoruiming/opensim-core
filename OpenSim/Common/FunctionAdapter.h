@@ -1,4 +1,4 @@
-#ifndef OPENSIM_FUNCTION_ADAPTER_H_
+﻿#ifndef OPENSIM_FUNCTION_ADAPTER_H_
 #define OPENSIM_FUNCTION_ADAPTER_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  FunctionAdapter.h                         *

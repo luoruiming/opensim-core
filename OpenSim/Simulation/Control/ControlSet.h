@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONTROL_SET_H_
+﻿#ifndef OPENSIM_CONTROL_SET_H_
 #define OPENSIM_CONTROL_SET_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  ControlSet.h                           *

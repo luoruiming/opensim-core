@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ANALYSIS_PLUGIN_TEMPLATE_H_
+﻿#ifndef OPENSIM_ANALYSIS_PLUGIN_TEMPLATE_H_
 #define OPENSIM_ANALYSIS_PLUGIN_TEMPLATE_H_
 /* -------------------------------------------------------------------------- *
  *                    OpenSim:  AnalysisPlugin_Template.h                     *

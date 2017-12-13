@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PATH_WRAP_SET_H
+﻿#ifndef OPENSIM_PATH_WRAP_SET_H
 #define OPENSIM_PATH_WRAP_SET_H
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  PathWrapSet.h                           *

@@ -1,4 +1,4 @@
-#ifndef __Constant_h__
+﻿#ifndef __Constant_h__
 #define __Constant_h__
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  Constant.h                            *

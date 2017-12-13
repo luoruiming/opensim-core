@@ -1,4 +1,4 @@
-#ifndef __Measurement_h__
+﻿#ifndef __Measurement_h__
 #define __Measurement_h__
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  Measurement.h                           *

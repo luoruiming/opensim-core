@@ -1,4 +1,4 @@
-#ifndef _StaticOptimizationTarget_h_
+﻿#ifndef _StaticOptimizationTarget_h_
 #define _StaticOptimizationTarget_h_
 /* -------------------------------------------------------------------------- *
  *                    OpenSim:  StaticOptimizationTarget.h                    *

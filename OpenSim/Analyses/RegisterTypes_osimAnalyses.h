@@ -1,4 +1,4 @@
-#ifndef _RegisterTypes_Analyses_h_
+﻿#ifndef _RegisterTypes_Analyses_h_
 #define _RegisterTypes_Analyses_h_
 /* -------------------------------------------------------------------------- *
  *                   OpenSim:  RegisterTypes_osimAnalyses.h                   *

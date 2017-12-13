@@ -1,4 +1,4 @@
-#ifndef __MarkerSet_h__
+﻿#ifndef __MarkerSet_h__
 #define __MarkerSet_h__
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  MarkerSet.h                            *

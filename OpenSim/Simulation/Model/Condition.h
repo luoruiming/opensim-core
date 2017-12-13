@@ -1,4 +1,4 @@
-#ifndef __Condition_h__
+﻿#ifndef __Condition_h__
 #define __Condition_h__
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  Condition.h                            *

@@ -1,4 +1,4 @@
-#ifndef __CoordinateSet_h__
+﻿#ifndef __CoordinateSet_h__
 #define __CoordinateSet_h__
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  CoordinateSet.h                          *

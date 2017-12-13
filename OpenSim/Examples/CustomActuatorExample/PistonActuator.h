@@ -1,4 +1,4 @@
-#ifndef _PistonActuator_h_
+﻿#ifndef _PistonActuator_h_
 #define _PistonActuator_h_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  PistonActuator.h                         *

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_RIGID_TENDON_MUSCLE_H_
+﻿#ifndef OPENSIM_RIGID_TENDON_MUSCLE_H_
 #define OPENSIM_RIGID_TENDON_MUSCLE_H_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  RigidTendonMuscle.h                        *

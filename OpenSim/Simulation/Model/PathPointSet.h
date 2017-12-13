@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PATH_POINT_SET_H
+﻿#ifndef OPENSIM_PATH_POINT_SET_H
 #define OPENSIM_PATH_POINT_SET_H
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  PathPointSet.h                          *

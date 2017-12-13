@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SIMULATION_COMPONENTS_FOR_TESTING_H_
+﻿#ifndef OPENSIM_SIMULATION_COMPONENTS_FOR_TESTING_H_
 #define OPENSIM_SIMULATION_COMPONENTS_FOR_TESTING_H_
 
 /* -------------------------------------------------------------------------- *

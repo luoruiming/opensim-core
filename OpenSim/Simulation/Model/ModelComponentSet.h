@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MODEL_COMPONENT_SET_H
+﻿#ifndef OPENSIM_MODEL_COMPONENT_SET_H
 #define OPENSIM_MODEL_COMPONENT_SET_H
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  ModelComponentSet.h                        *

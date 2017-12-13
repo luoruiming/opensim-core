@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONTROL_SET_CONTROLLER_H_
+﻿#ifndef OPENSIM_CONTROL_SET_CONTROLLER_H_
 #define OPENSIM_CONTROL_SET_CONTROLLER_H_
 
 /* -------------------------------------------------------------------------- *

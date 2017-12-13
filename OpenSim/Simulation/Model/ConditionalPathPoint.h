@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONDITIONAL_PATH_POINT_H_
+﻿#ifndef OPENSIM_CONDITIONAL_PATH_POINT_H_
 #define OPENSIM_CONDITIONAL_PATH_POINT_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  ConditionalPathPoint.h                      *

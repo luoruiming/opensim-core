@@ -1,4 +1,4 @@
-#ifndef OPENSIM_BALL_JOINT_H_
+﻿#ifndef OPENSIM_BALL_JOINT_H_
 #define OPENSIM_BALL_JOINT_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  BallJoint.h                            *

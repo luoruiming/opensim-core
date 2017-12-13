@@ -1,4 +1,4 @@
-#ifndef __ControllerSet_h__
+﻿#ifndef __ControllerSet_h__
 #define __ControllerSet_h__
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  ControllerSet.h                          *

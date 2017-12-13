@@ -1,4 +1,4 @@
-#ifndef TESTING_GETRSS_H_
+﻿#ifndef TESTING_GETRSS_H_
 #define TESTING_GETRSS_H_
 /*
  * Author:  David Robert Nadeau

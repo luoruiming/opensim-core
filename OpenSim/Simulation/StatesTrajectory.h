@@ -1,4 +1,4 @@
-#ifndef OPENSIM_STATES_TRAJECTORY_H_
+﻿#ifndef OPENSIM_STATES_TRAJECTORY_H_
 #define OPENSIM_STATES_TRAJECTORY_H_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  StatesTrajectory.h                         *

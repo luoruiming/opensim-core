@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SIMULATION_UTILITIES_H_
+﻿#ifndef OPENSIM_SIMULATION_UTILITIES_H_
 #define OPENSIM_SIMULATION_UTILITIES_H_
 /* -------------------------------------------------------------------------- *
  *                     OpenSim:  SimulationUtilities.h                        *

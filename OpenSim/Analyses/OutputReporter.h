@@ -1,4 +1,4 @@
-#ifndef OUTPUT_REPORTER_H_
+﻿#ifndef OUTPUT_REPORTER_H_
 #define OUTPUT_REPORTER_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim: OutputReporter.h                          *

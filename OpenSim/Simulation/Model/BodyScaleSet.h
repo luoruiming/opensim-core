@@ -1,4 +1,4 @@
-#ifndef __BodyScaleSet_h__
+﻿#ifndef __BodyScaleSet_h__
 #define __BodyScaleSet_h__
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  BodyScaleSet.h                          *

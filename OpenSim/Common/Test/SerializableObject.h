@@ -1,4 +1,4 @@
-#ifndef _SerializableObject_h_
+﻿#ifndef _SerializableObject_h_
 #define _SerializableObject_h_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  SerializableObject.h                       *

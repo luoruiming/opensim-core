@@ -1,4 +1,4 @@
-/* This file builds an executable that can receive IMU data from a phone and
+﻿/* This file builds an executable that can receive IMU data from a phone and
 control the pose (roll and pitch) of a rectangular slab in OpenSim. The phone needs to be Android,
 have an accelerometer and a gyroscope, and have the app 'Wireless IMU' installed. To run the
 executable, make sure to set the IP address of the machine that is running the executable into

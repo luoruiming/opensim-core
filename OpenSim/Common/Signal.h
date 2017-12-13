@@ -1,4 +1,4 @@
-#ifndef _Signal_h_
+﻿#ifndef _Signal_h_
 #define _Signal_h_
 /* -------------------------------------------------------------------------- *
  *                             OpenSim:  Signal.h                             *

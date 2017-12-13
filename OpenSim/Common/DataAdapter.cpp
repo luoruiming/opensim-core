@@ -1,4 +1,4 @@
-#include "Adapters.h"
+﻿#include "Adapters.h"
 
 namespace OpenSim {
 

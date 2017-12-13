@@ -1,4 +1,4 @@
-#ifndef __PropertyGroup_h__
+﻿#ifndef __PropertyGroup_h__
 #define __PropertyGroup_h__
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  PropertyGroup.h                          *

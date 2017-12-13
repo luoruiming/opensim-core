@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SCALE_TOOL_H_ 
+﻿#ifndef OPENSIM_SCALE_TOOL_H_ 
 #define OPENSIM_SCALE_TOOL_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  ScaleTool.h                            *

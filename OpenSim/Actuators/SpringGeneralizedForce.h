@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SPRING_GENERALIZED_FORCE_H_
+﻿#ifndef OPENSIM_SPRING_GENERALIZED_FORCE_H_
 #define OPENSIM_SPRING_GENERALIZED_FORCE_H_
 /* -------------------------------------------------------------------------- *
  *                     OpenSim:  SpringGeneralizedForce.h                     *

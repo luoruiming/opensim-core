@@ -1,4 +1,4 @@
-#ifndef CMC_Task_h__
+﻿#ifndef CMC_Task_h__
 #define CMC_Task_h__
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  CMC_Task.h                            *

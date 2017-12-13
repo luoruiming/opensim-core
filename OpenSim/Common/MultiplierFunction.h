@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MULTIPLIER_FUNCTION_H_
+﻿#ifndef OPENSIM_MULTIPLIER_FUNCTION_H_
 #define OPENSIM_MULTIPLIER_FUNCTION_H_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  MultiplierFunction.h                       *

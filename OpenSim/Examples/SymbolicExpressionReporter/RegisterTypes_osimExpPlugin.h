@@ -1,4 +1,4 @@
-#ifndef _RegisterTypes_osimExpPlugin_h_
+﻿#ifndef _RegisterTypes_osimExpPlugin_h_
 #define _RegisterTypes_osimExpPlugin_h_
 /* -------------------------------------------------------------------------- *
  *                  OpenSim:  RegisterTypes_osimExpPlugin.h                   *

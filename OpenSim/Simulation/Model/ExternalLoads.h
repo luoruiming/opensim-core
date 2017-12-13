@@ -1,4 +1,4 @@
-#ifndef OPENSIM_EXTERNAL_LOADS_H_
+﻿#ifndef OPENSIM_EXTERNAL_LOADS_H_
 #define OPENSIM_EXTERNAL_LOADS_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  ExternalLoads.h                          *

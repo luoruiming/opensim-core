@@ -1,4 +1,4 @@
-#ifndef OPENSIM_FiberCompressiveForceCosPennationCurve_h__
+﻿#ifndef OPENSIM_FiberCompressiveForceCosPennationCurve_h__
 #define OPENSIM_FiberCompressiveForceCosPennationCurve_h__
 /* -------------------------------------------------------------------------- *
  *             OpenSim:  FiberCompressiveForceCosPennationCurve.h             *

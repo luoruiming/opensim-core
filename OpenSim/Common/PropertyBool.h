@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PROPERTY_BOOL_H_
+﻿#ifndef OPENSIM_PROPERTY_BOOL_H_
 #define OPENSIM_PROPERTY_BOOL_H_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  PropertyBool.h                          *

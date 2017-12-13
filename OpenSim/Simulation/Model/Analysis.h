@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ANALYSIS_H
+﻿#ifndef OPENSIM_ANALYSIS_H
 #define OPENSIM_ANALYSIS_H
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  Analysis.h                            *

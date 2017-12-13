@@ -1,4 +1,4 @@
-#ifndef OPENSIM_FIBER_COMPRESSIVE_FORCE_LENGTH_CURVE_H_
+﻿#ifndef OPENSIM_FIBER_COMPRESSIVE_FORCE_LENGTH_CURVE_H_
 #define OPENSIM_FIBER_COMPRESSIVE_FORCE_LENGTH_CURVE_H_
 /* -------------------------------------------------------------------------- *
  *                OpenSim:  FiberCompressiveForceLengthCurve.h                *

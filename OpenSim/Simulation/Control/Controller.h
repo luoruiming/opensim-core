@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONTROLLER_H_
+﻿#ifndef OPENSIM_CONTROLLER_H_
 #define OPENSIM_CONTROLLER_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  Controller.h                           *

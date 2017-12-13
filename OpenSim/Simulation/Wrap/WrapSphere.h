@@ -1,4 +1,4 @@
-#ifndef __WrapSphere_h__
+﻿#ifndef __WrapSphere_h__
 #define __WrapSphere_h__
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  WrapSphere.h                           *

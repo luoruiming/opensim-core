@@ -1,4 +1,4 @@
-#ifndef OPENSIM_WELD_CONSTRAINT_H_
+﻿#ifndef OPENSIM_WELD_CONSTRAINT_H_
 #define OPENSIM_WELD_CONSTRAINT_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  WeldConstraint.h                         *

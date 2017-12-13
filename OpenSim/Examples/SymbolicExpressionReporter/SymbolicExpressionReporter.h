@@ -1,4 +1,4 @@
-#ifndef _SymbolicExpressionReporter_h_
+﻿#ifndef _SymbolicExpressionReporter_h_
 #define _SymbolicExpressionReporter_h_
 /* -------------------------------------------------------------------------- *
  *                   OpenSim:  SymbolicExpressionReporter.h                   *

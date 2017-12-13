@@ -1,4 +1,4 @@
-/* Consider the following continuous optimal control problem:
+﻿/* Consider the following continuous optimal control problem:
  *
  * find       q, u, a, lm (fiber length), e (excitation), mult_t
  * minimize   reaction force in knee joint

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MUSCLE_H_
+﻿#ifndef OPENSIM_MUSCLE_H_
 #define OPENSIM_MUSCLE_H_
 /* -------------------------------------------------------------------------- *
  *                             OpenSim:  Muscle.h                             *

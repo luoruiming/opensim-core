@@ -1,4 +1,4 @@
-#ifndef __BodySet_h__
+﻿#ifndef __BodySet_h__
 #define __BodySet_h__
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  BodySet.h                             *

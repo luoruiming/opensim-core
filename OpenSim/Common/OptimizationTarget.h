@@ -1,4 +1,4 @@
-#ifndef _OptimizationTarget_h_
+﻿#ifndef _OptimizationTarget_h_
 #define _OptimizationTarget_h_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  OptimizationTarget.h                       *

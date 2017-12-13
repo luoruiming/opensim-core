@@ -1,4 +1,4 @@
-#ifndef OPENSIM_COMPONENT_SOCKET_H_
+﻿#ifndef OPENSIM_COMPONENT_SOCKET_H_
 #define OPENSIM_COMPONENT_SOCKET_H_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  ComponentSocket.h                          *

@@ -1,4 +1,4 @@
-#ifndef _ArrayPtrs_h_
+﻿#ifndef _ArrayPtrs_h_
 #define _ArrayPtrs_h_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  ArrayPtrs.h                            *

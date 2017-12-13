@@ -1,4 +1,4 @@
-#ifndef OPENSIM_WRAP_DOUBLE_CYLINDER_OBST_H_
+﻿#ifndef OPENSIM_WRAP_DOUBLE_CYLINDER_OBST_H_
 #define OPENSIM_WRAP_DOUBLE_CYLINDER_OBST_H_
 /* -------------------------------------------------------------------------- *
  *                     OpenSim:  WrapDoubleCylinderObst.h                     *

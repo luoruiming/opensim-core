@@ -1,4 +1,4 @@
-#ifndef _ScaleSet_h_
+﻿#ifndef _ScaleSet_h_
 #define _ScaleSet_h_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  ScaleSet.h                            *

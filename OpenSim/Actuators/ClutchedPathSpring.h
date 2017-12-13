@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CLUTCHED_PATH_SPRING_H_
+﻿#ifndef OPENSIM_CLUTCHED_PATH_SPRING_H_
 #define OPENSIM_CLUTCHED_PATH_SPRING_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  ClutchedPathSpring.h                        *

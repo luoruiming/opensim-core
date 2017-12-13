@@ -1,4 +1,4 @@
-#ifndef _PropertyBoolArray_h_
+﻿#ifndef _PropertyBoolArray_h_
 #define _PropertyBoolArray_h_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  PropertyBoolArray.h                        *

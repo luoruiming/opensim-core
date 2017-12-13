@@ -1,4 +1,4 @@
-#ifndef __WrapEllipsoid_h__
+﻿#ifndef __WrapEllipsoid_h__
 #define __WrapEllipsoid_h__
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  WrapEllipsoid.h                          *

@@ -1,4 +1,4 @@
-#ifndef __CoordinateReference_h__
+﻿#ifndef __CoordinateReference_h__
 #define __CoordinateReference_h__
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  CoordinateReference.h                       *

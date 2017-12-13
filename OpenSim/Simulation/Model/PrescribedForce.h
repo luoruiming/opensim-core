@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PRESCRIBED_FORCE_H_
+﻿#ifndef OPENSIM_PRESCRIBED_FORCE_H_
 #define OPENSIM_PRESCRIBED_FORCE_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  PrescribedForce.h                         *

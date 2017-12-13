@@ -1,4 +1,4 @@
-#ifndef OPENSIM_INVERSE_KINEMATICS_SOLVER_H_
+﻿#ifndef OPENSIM_INVERSE_KINEMATICS_SOLVER_H_
 #define OPENSIM_INVERSE_KINEMATICS_SOLVER_H_
 /* -------------------------------------------------------------------------- *
  *                    OpenSim:  InverseKinematicsSolver.h                     *

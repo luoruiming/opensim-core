@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ZEROTH_ORDER_MUSCLE_ACTIVATION_DYNAMICS_H_
+﻿#ifndef OPENSIM_ZEROTH_ORDER_MUSCLE_ACTIVATION_DYNAMICS_H_
 #define OPENSIM_ZEROTH_ORDER_MUSCLE_ACTIVATION_DYNAMICS_H_
 /* -------------------------------------------------------------------------- *
  *              OpenSim:  ZerothOrderMuscleActivationDynamics.h               *

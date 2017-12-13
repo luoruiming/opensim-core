@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONSTRAINT_H_
+﻿#ifndef OPENSIM_CONSTRAINT_H_
 #define OPENSIM_CONSTRAINT_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  Constraint.h                           *

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ACTUATOR_H_
+﻿#ifndef OPENSIM_ACTUATOR_H_
 #define OPENSIM_ACTUATOR_H_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  Actuator.h                            *

@@ -1,4 +1,4 @@
-#ifndef _RegisterTypes_osimSimulation_h_
+﻿#ifndef _RegisterTypes_osimSimulation_h_
 #define _RegisterTypes_osimSimulation_h_
 /* -------------------------------------------------------------------------- *
  *                  OpenSim:  RegisterTypes_osimSimulation.h                  *

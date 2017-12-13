@@ -1,4 +1,4 @@
-#ifndef _osimAnalyses_h_
+﻿#ifndef _osimAnalyses_h_
 #define _osimAnalyses_h_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  osimAnalyses.h                          *

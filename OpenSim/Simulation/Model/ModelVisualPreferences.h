@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MODEL_VISUAL_PREFERENCES_H_
+﻿#ifndef OPENSIM_MODEL_VISUAL_PREFERENCES_H_
 #define OPENSIM_MODEL_VISUAL_PREFERENCES_H_
 /* -------------------------------------------------------------------------- *
  *                   OpenSim:  ModelVisualPreferences.h                       *

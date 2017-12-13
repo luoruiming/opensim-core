@@ -1,4 +1,4 @@
-#ifndef __ForwardTool_h__
+﻿#ifndef __ForwardTool_h__
 #define __ForwardTool_h__
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  ForwardTool.h                           *

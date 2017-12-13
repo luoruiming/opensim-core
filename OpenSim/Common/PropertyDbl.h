@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PROPERTY_DBL_H_
+﻿#ifndef OPENSIM_PROPERTY_DBL_H_
 #define OPENSIM_PROPERTY_DBL_H_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  PropertyDbl.h                           *

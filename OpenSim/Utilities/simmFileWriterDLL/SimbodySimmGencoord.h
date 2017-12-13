@@ -1,4 +1,4 @@
-#ifndef __SimbodySimmGencoord_h__
+﻿#ifndef __SimbodySimmGencoord_h__
 #define __SimbodySimmGencoord_h__
 /* -------------------------------------------------------------------------- *
  *                          SimbodySimmGencoord.h                             *

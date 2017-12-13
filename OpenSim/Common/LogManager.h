@@ -1,4 +1,4 @@
-#ifndef _LogManager_h_
+﻿#ifndef _LogManager_h_
 #define _LogManager_h_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  LogManager.h                           *

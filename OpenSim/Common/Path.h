@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PATH_H_
+﻿#ifndef OPENSIM_PATH_H_
 #define OPENSIM_PATH_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim: Path.h                                  *

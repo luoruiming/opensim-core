@@ -1,4 +1,4 @@
-#ifndef OPENSIM_BUSHING_FORCE_H_
+﻿#ifndef OPENSIM_BUSHING_FORCE_H_
 #define OPENSIM_BUSHING_FORCE_H_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  BushingForce.h                          *

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_GIMBAL_JOINT_H_
+﻿#ifndef OPENSIM_GIMBAL_JOINT_H_
 #define OPENSIM_GIMBAL_JOINT_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  GimbalJoint.h                            *

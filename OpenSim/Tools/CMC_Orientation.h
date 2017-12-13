@@ -1,4 +1,4 @@
-#ifndef CMCOrientation_h__
+﻿#ifndef CMCOrientation_h__
 #define CMCOrientation_h__
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  CMC_Orientation.h                         *

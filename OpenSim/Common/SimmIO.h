@@ -1,4 +1,4 @@
-#ifndef __SimmIO_h__
+﻿#ifndef __SimmIO_h__
 #define __SimmIO_h__
 /* -------------------------------------------------------------------------- *
  *                             OpenSim:  SimmIO.h                             *

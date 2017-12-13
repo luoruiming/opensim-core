@@ -1,4 +1,4 @@
-#ifndef OPENSIM_XMLDOCUMENT_H
+﻿#ifndef OPENSIM_XMLDOCUMENT_H
 #define OPENSIM_XMLDOCUMENT_H
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  XMLDocument.h                           *

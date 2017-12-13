@@ -1,4 +1,4 @@
-#ifndef __IKTaskSet_h__
+﻿#ifndef __IKTaskSet_h__
 #define __IKTaskSet_h__
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  IKTaskSet.h                            *

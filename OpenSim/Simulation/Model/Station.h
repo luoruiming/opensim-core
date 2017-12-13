@@ -1,4 +1,4 @@
-#ifndef OPENSIM_STATION_H_
+﻿#ifndef OPENSIM_STATION_H_
 #define OPENSIM_STATION_H_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  Station.h                             *

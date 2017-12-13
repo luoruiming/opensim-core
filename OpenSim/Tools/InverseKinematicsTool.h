@@ -1,4 +1,4 @@
-#ifndef __InverseKinematicsTool_h__
+﻿#ifndef __InverseKinematicsTool_h__
 #define __InverseKinematicsTool_h__
 /* -------------------------------------------------------------------------- *
  *                     OpenSim:  InverseKinematicsTool.h                      *

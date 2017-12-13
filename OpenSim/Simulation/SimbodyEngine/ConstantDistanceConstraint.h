@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONSTANT_DISTANCE_CONSTRAINT_H_
+﻿#ifndef OPENSIM_CONSTANT_DISTANCE_CONSTRAINT_H_
 #define OPENSIM_CONSTANT_DISTANCE_CONSTRAINT_H_
 /* -------------------------------------------------------------------------- *
  *                   OpenSim:  ConstantDistanceConstraint.h                   *

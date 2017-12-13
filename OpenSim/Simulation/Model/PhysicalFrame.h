@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PHYSICAL_FRAME_H_
+﻿#ifndef OPENSIM_PHYSICAL_FRAME_H_
 #define OPENSIM_PHYSICAL_FRAME_H_
 /* --------------------------------------------------------------------------*
 *                              OpenSim:  PhysicalFrame.h                     *   

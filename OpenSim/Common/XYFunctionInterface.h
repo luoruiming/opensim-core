@@ -1,4 +1,4 @@
-#ifndef __XYFunctionInterfaceInterface_h__
+﻿#ifndef __XYFunctionInterfaceInterface_h__
 #define __XYFunctionInterfaceInterface_h__
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  XYFunctionInterface.h                       *

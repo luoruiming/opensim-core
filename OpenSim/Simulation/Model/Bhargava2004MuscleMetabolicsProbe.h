@@ -1,4 +1,4 @@
-#ifndef OPENSIM_BHARGAVA2004_METABOLIC_POWER_PROBE_H_
+﻿#ifndef OPENSIM_BHARGAVA2004_METABOLIC_POWER_PROBE_H_
 #define OPENSIM_BHARGAVA2004_METABOLIC_POWER_PROBE_H_
 /* -------------------------------------------------------------------------- *
  *               OpenSim:  Bhargava2004MuscleMetabolicsProbe.h                *

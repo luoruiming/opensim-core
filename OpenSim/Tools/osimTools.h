@@ -1,4 +1,4 @@
-#ifndef OPENSIM_OSIMTOOLS_H_
+﻿#ifndef OPENSIM_OSIMTOOLS_H_
 #define OPENSIM_OSIMTOOLS_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  osimTools.h                            *

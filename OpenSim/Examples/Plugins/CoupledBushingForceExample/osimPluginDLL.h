@@ -1,4 +1,4 @@
-#ifndef _osimPluginDLL_h_
+﻿#ifndef _osimPluginDLL_h_
 #define _osimPluginDLL_h_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  osimPluginDLL.h                          *

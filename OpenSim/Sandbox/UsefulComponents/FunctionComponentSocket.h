@@ -1,4 +1,4 @@
-#ifndef FUNCTION_COMPONENT_SOCKET_H
+﻿#ifndef FUNCTION_COMPONENT_SOCKET_H
 #define FUNCTION_COMPONENT_SOCKET_H
 
 #include <OpenSim/Simulation/Model/ModelComponent.h>

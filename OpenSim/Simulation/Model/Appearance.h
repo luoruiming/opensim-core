@@ -1,4 +1,4 @@
-#ifndef OPENSIM_APPEARANCE_H_
+﻿#ifndef OPENSIM_APPEARANCE_H_
 #define OPENSIM_APPEARANCE_H_
 /* -------------------------------------------------------------------------- *
  *                             OpenSim:  Appearance.h                         *

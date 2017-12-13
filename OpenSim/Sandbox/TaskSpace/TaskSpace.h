@@ -1,4 +1,4 @@
-/* -------------------------------------------------------------------------- *
+﻿/* -------------------------------------------------------------------------- *
 *                               Simbody(tm)                                  *
 * -------------------------------------------------------------------------- *
 * This is part of the SimTK biosimulation toolkit originating from           *
@@ -50,7 +50,7 @@ public: \
         return m_ ## MEMVAR; \
     }
 
-    /** (Experimental – API will change – use at your own risk) Efficient and
+    /** (Experimental 鈥?API will change 鈥?use at your own risk) Efficient and
     * convenient computation of quantities necessary for task-space
     * model-based controllers.
     *

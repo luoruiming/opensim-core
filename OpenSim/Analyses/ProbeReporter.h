@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PROBE_REPORTER_H_
+﻿#ifndef OPENSIM_PROBE_REPORTER_H_
 #define OPENSIM_PROBE_REPORTER_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  ProbeReporter.h                          *

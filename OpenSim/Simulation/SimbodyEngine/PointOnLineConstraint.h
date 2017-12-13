@@ -1,4 +1,4 @@
-#ifndef OPENSIM_POINT_ON_LINE_CONSTRAINT_H_
+﻿#ifndef OPENSIM_POINT_ON_LINE_CONSTRAINT_H_
 #define OPENSIM_POINT_ON_LINE_CONSTRAINT_H_
 /* -------------------------------------------------------------------------- *
  *                     OpenSim:  PointOnLineConstraint.h                      *

@@ -1,4 +1,4 @@
-#ifndef __ModelScaler_h__
+﻿#ifndef __ModelScaler_h__
 #define __ModelScaler_h__
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  ModelScaler.h                           *

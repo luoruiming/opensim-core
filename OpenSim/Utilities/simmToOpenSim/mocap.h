@@ -1,4 +1,4 @@
-/*******************************************************************************
+﻿/*******************************************************************************
 
    MOCAP.H - public api for the mocap to SIMM tranlator.  This translator
       currently handles Motion Analysis HTR & HTR2 files as well as realtime

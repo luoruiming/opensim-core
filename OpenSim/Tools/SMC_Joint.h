@@ -1,4 +1,4 @@
-#ifndef SMC_Joint_h__
+﻿#ifndef SMC_Joint_h__
 #define SMC_Joint_h__
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  SMC_Joint.h                            *

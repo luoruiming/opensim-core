@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SIGNAL_GENERATOR_H_
+﻿#ifndef OPENSIM_SIGNAL_GENERATOR_H_
 #define OPENSIM_SIGNAL_GENERATOR_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim: SignalGenerator.h                          *

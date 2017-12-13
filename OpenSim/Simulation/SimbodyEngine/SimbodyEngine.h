@@ -1,4 +1,4 @@
-#ifndef __SimbodyEngine_h__
+﻿#ifndef __SimbodyEngine_h__
 #define __SimbodyEngine_h__
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  SimbodyEngine.h                          *

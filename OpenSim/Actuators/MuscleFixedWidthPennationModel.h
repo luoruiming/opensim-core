@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MUSCLEFIXEDWIDTHPENNATIONMODEL_H_
+﻿#ifndef OPENSIM_MUSCLEFIXEDWIDTHPENNATIONMODEL_H_
 #define OPENSIM_MUSCLEFIXEDWIDTHPENNATIONMODEL_H_
 /* -------------------------------------------------------------------------- *
  *                 OpenSim:  MuscleFixedWidthPennationModel.h                 *

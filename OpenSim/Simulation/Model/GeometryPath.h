@@ -1,4 +1,4 @@
-#ifndef OPENSIM_GEOMETRY_PATH_H_
+﻿#ifndef OPENSIM_GEOMETRY_PATH_H_
 #define OPENSIM_GEOMETRY_PATH_H_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  GeometryPath.h                          *

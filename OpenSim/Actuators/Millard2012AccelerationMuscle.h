@@ -1,4 +1,4 @@
-#ifndef OPENSIM_Millard2012AccelerationMuscle_h__
+﻿#ifndef OPENSIM_Millard2012AccelerationMuscle_h__
 #define OPENSIM_Millard2012AccelerationMuscle_h__
 /* -------------------------------------------------------------------------- *
  *                 OpenSim:  Millard2012AccelerationMuscle.h                  *

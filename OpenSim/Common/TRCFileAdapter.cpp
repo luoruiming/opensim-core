@@ -1,4 +1,4 @@
-#include "TRCFileAdapter.h"
+﻿#include "TRCFileAdapter.h"
 #include <fstream>
 #include <iomanip>
 

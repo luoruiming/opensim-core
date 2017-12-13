@@ -1,4 +1,4 @@
-#ifndef _opensim_h_
+﻿#ifndef _opensim_h_
 #define _opensim_h_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  OpenSim.h                             *

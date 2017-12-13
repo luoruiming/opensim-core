@@ -1,4 +1,4 @@
-#ifndef OPENSIM_WELD_JOINT_H_
+﻿#ifndef OPENSIM_WELD_JOINT_H_
 #define OPENSIM_WELD_JOINT_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  WeldJoint.h                            *

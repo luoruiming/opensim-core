@@ -1,4 +1,4 @@
-#ifndef OPENSIM_INDUCED_ACCELERATIONS_H_
+﻿#ifndef OPENSIM_INDUCED_ACCELERATIONS_H_
 #define OPENSIM_INDUCED_ACCELERATIONS_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  InducedAccelerations.h                      *

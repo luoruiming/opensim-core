@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MODEL_H_
+﻿#ifndef OPENSIM_MODEL_H_
 #define OPENSIM_MODEL_H_
 /* -------------------------------------------------------------------------- *
  *                             OpenSim:  Model.h                              *

@@ -1,4 +1,4 @@
-#ifndef _Kinematics_h_
+﻿#ifndef _Kinematics_h_
 #define _Kinematics_h_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  Kinematics.h                           *

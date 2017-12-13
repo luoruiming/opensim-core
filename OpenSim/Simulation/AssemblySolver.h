@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ASSEMBLY_SOLVER_H_
+﻿#ifndef OPENSIM_ASSEMBLY_SOLVER_H_
 #define OPENSIM_ASSEMBLY_SOLVER_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  AssemblySolver.h                         *

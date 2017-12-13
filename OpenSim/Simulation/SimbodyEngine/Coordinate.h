@@ -1,4 +1,4 @@
-#ifndef OPENSIM_COORDINATE_H_
+﻿#ifndef OPENSIM_COORDINATE_H_
 #define OPENSIM_COORDINATE_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  Coordinate.h                           *

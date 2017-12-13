@@ -1,4 +1,4 @@
-#ifndef __AnalyzeTool_h__
+﻿#ifndef __AnalyzeTool_h__
 #define __AnalyzeTool_h__
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  AnalyzeTool.h                           *

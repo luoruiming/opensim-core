@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SEGMENTEDQUINTICBEZIERTOOLKIT_H_
+﻿#ifndef OPENSIM_SEGMENTEDQUINTICBEZIERTOOLKIT_H_
 #define OPENSIM_SEGMENTEDQUINTICBEZIERTOOLKIT_H_
 /* -------------------------------------------------------------------------- *
  *                 OpenSim:  SegmentedQuinticBezierToolkit.h                  *

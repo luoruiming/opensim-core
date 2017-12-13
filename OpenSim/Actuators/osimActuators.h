@@ -1,4 +1,4 @@
-#ifndef _osimActuators_h_
+﻿#ifndef _osimActuators_h_
 #define _osimActuators_h_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  osimActuators.h                          *

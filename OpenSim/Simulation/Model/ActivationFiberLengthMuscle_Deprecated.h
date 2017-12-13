@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ACTIVATION_FIBER_LENGTH_MUSCLE_DEPRECATED_H_
+﻿#ifndef OPENSIM_ACTIVATION_FIBER_LENGTH_MUSCLE_DEPRECATED_H_
 #define OPENSIM_ACTIVATION_FIBER_LENGTH_MUSCLE_DEPRECATED_H_
 /* -------------------------------------------------------------------------- *
  *             OpenSim:  ActivationFiberLengthMuscle_Deprecated.h             *

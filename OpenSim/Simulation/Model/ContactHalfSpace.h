@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONTACT_HALF_SPACE_H_
+﻿#ifndef OPENSIM_CONTACT_HALF_SPACE_H_
 #define OPENSIM_CONTACT_HALF_SPACE_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  ContactHalfSpace.h                        *

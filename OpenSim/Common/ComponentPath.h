@@ -1,4 +1,4 @@
-#ifndef OPENSIM_COMPONENT_PATH_H_
+﻿#ifndef OPENSIM_COMPONENT_PATH_H_
 #define OPENSIM_COMPONENT_PATH_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim: ComponentPath.h                              *

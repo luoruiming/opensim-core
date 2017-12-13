@@ -1,4 +1,4 @@
-#ifndef _statesReporter_h_
+﻿#ifndef _statesReporter_h_
 #define _statesReporter_h_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  StatesReporter.h                         *

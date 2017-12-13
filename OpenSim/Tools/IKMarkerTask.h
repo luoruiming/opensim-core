@@ -1,4 +1,4 @@
-#ifndef __IKMarkerTask_h__
+﻿#ifndef __IKMarkerTask_h__
 #define __IKMarkerTask_h__
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  IKMarkerTask.h                          *

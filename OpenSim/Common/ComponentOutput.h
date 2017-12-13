@@ -1,4 +1,4 @@
-#ifndef OPENSIM_COMPONENT_OUTPUT_H_
+﻿#ifndef OPENSIM_COMPONENT_OUTPUT_H_
 #define OPENSIM_COMPONENT_OUTPUT_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  ComponentOutput.h                           *

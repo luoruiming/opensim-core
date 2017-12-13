@@ -1,4 +1,4 @@
-#ifndef _LogCallback_h_
+﻿#ifndef _LogCallback_h_
 #define _LogCallback_h_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  LogCallback.h                           *

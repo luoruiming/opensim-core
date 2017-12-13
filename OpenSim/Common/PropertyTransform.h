@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PROPERTY_TRANSFORM_H_
+﻿#ifndef OPENSIM_PROPERTY_TRANSFORM_H_
 #define OPENSIM_PROPERTY_TRANSFORM_H_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  PropertyTransform.h                        *

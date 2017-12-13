@@ -1,4 +1,4 @@
-#ifndef OPENSIM_GCV_SPLINE_H_
+﻿#ifndef OPENSIM_GCV_SPLINE_H_
 #define OPENSIM_GCV_SPLINE_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  GCVSpline.h                            *

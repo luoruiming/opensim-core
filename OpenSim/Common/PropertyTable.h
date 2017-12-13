@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PROPERTY_TABLE_H_
+﻿#ifndef OPENSIM_PROPERTY_TABLE_H_
 #define OPENSIM_PROPERTY_TABLE_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  PropertyTable.h                          *

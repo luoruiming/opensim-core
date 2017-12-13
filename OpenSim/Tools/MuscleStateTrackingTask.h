@@ -1,4 +1,4 @@
-#ifndef MuscleStateTrackingTask_h__
+﻿#ifndef MuscleStateTrackingTask_h__
 #define MuscleStateTrackingTask_h__
 /* -------------------------------------------------------------------------- *
  *                    OpenSim:  MuscleStateTrackingTask.h                     *

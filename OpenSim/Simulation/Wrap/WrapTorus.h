@@ -1,4 +1,4 @@
-#ifndef __WrapTorus_h__
+﻿#ifndef __WrapTorus_h__
 #define __WrapTorus_h__
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  WrapTorus.h                            *

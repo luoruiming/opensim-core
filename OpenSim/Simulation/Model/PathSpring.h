@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PATH_SPRING_H_
+﻿#ifndef OPENSIM_PATH_SPRING_H_
 #define OPENSIM_PATH_SPRING_H_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  PathSpring.h                          *

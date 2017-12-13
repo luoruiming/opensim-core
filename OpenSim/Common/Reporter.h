@@ -1,4 +1,4 @@
-#ifndef OPENSIM_REPORTER_H_
+﻿#ifndef OPENSIM_REPORTER_H_
 #define OPENSIM_REPORTER_H_
 /* -------------------------------------------------------------------------- *
  *                             OpenSim:  Reporter.h                           *

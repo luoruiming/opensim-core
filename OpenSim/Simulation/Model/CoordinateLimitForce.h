@@ -1,4 +1,4 @@
-#ifndef OPENSIM_COORDINATE_LIMIT_FORCE_H_
+﻿#ifndef OPENSIM_COORDINATE_LIMIT_FORCE_H_
 #define OPENSIM_COORDINATE_LIMIT_FORCE_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  CoordinateLimitForce.h                      *

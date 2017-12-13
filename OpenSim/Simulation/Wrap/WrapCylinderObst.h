@@ -1,4 +1,4 @@
-#ifndef __WrapCylinderObst_h__
+﻿#ifndef __WrapCylinderObst_h__
 #define __WrapCylinderObst_h__
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  WrapCylinderObst.h                        *

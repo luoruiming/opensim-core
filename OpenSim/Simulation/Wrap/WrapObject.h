@@ -1,4 +1,4 @@
-#ifndef OPENSIM_WRAP_OBJECT_H_
+﻿#ifndef OPENSIM_WRAP_OBJECT_H_
 #define OPENSIM_WRAP_OBJECT_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  WrapObject.h                           *

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_INVERSE_DYNAMICS_TOOL_H_
+﻿#ifndef OPENSIM_INVERSE_DYNAMICS_TOOL_H_
 #define OPENSIM_INVERSE_DYNAMICS_TOOL_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  InverseDynamicsTool.h                       *

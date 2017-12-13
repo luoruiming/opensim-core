@@ -1,4 +1,4 @@
-#ifndef OPENSIM_GROUND_H_
+﻿#ifndef OPENSIM_GROUND_H_
 #define OPENSIM_GROUND_H_
 /* --------------------------------------------------------------------------*
 *                            OpenSim:  Ground.h                              *

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_BODY_H_
+﻿#ifndef OPENSIM_BODY_H_
 #define OPENSIM_BODY_H_
 /* -------------------------------------------------------------------------- *
  *                              OpenSim:  Body.h                              *

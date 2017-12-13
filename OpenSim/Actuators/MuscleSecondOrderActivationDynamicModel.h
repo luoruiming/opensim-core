@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MUSCLESECONDORDERACTIVATIONDYNAMICMODEL_H_
+﻿#ifndef OPENSIM_MUSCLESECONDORDERACTIVATIONDYNAMICMODEL_H_
 #define OPENSIM_MUSCLESECONDORDERACTIVATIONDYNAMICMODEL_H_
 /* -------------------------------------------------------------------------- *
  *             OpenSim:  MuscleSecondOrderActivationDynamicModel.h             *

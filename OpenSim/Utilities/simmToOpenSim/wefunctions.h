@@ -1,4 +1,4 @@
-/*******************************************************************************
+﻿/*******************************************************************************
 
    WEFUNCTIONS.H - this header declares the Wrap Editor's public functions
       as well as the 3 wrapping algorithm public functions:

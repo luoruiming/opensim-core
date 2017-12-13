@@ -1,4 +1,4 @@
-#ifndef _OPENSIM_BODY_DRAG_FORCE_PLUGIN_H_
+﻿#ifndef _OPENSIM_BODY_DRAG_FORCE_PLUGIN_H_
 #define _OPENSIM_BODY_DRAG_FORCE_PLUGIN_H_
 /* -------------------------------------------------------------------------- *
  *                             BodyDragForce.h                                *

@@ -1,4 +1,4 @@
-#include "STOFileAdapter.h"
+﻿#include "STOFileAdapter.h"
 
 namespace OpenSim {
 

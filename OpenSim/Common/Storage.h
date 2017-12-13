@@ -1,4 +1,4 @@
-#ifndef OPENSIM_STORAGE_H_
+﻿#ifndef OPENSIM_STORAGE_H_
 #define OPENSIM_STORAGE_H_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  Storage.h                             *

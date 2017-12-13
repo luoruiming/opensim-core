@@ -1,4 +1,4 @@
-#ifndef _Scale_h_
+﻿#ifndef _Scale_h_
 #define _Scale_h_
 /* -------------------------------------------------------------------------- *
  *                             OpenSim:  Scale.h                              *

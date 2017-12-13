@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONTROL_LINEAR_H_
+﻿#ifndef OPENSIM_CONTROL_LINEAR_H_
 #define OPENSIM_CONTROL_LINEAR_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  ControlLinear.h                          *

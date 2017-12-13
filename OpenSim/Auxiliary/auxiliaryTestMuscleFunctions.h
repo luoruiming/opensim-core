@@ -1,4 +1,4 @@
-#ifndef OPENSIM_AUXILIARY_TEST_MUSCLE_FUNCTIONS_H_
+﻿#ifndef OPENSIM_AUXILIARY_TEST_MUSCLE_FUNCTIONS_H_
 #define OPENSIM_AUXILIARY_TEST_MUSCLE_FUNCTIONS_H_
 /* -------------------------------------------------------------------------- *
  *                  OpenSim:  auxiliaryTestMuscleFunctions.h                  *

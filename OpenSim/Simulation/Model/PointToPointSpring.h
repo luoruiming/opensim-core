@@ -1,4 +1,4 @@
-#ifndef OPENSIM_POINT_TO_POINT_SPRING_H_
+﻿#ifndef OPENSIM_POINT_TO_POINT_SPRING_H_
 #define OPENSIM_POINT_TO_POINT_SPRING_H_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  PointToPointSpring.h                       *

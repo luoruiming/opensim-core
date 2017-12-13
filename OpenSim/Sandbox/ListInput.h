@@ -1,4 +1,4 @@
-
+﻿
 #define OpenSim_DECLARE_INPUT(name, T, stage) \
 int _input_##name { constructInput<T>(name, stage) }; \
 const Input<T>& getInput_##name() const; \

@@ -1,4 +1,4 @@
-#ifndef __ConstraintSet_h__
+﻿#ifndef __ConstraintSet_h__
 #define __ConstraintSet_h__
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  ConstraintSet.h                          *

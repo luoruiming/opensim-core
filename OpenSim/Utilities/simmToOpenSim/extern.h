@@ -1,4 +1,4 @@
-extern JointName       joint_name[];
+﻿extern JointName       joint_name[];
 extern SegmentName     segment_name[];
 extern ComponentName   component_name[];
 extern SideName        side_name[];

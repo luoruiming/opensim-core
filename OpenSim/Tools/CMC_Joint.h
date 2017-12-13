@@ -1,4 +1,4 @@
-#ifndef CMCJoint_h__
+﻿#ifndef CMCJoint_h__
 #define CMCJoint_h__
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  CMC_Joint.h                            *

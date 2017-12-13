@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ABSTRACT_PATH_POINT_H_
+﻿#ifndef OPENSIM_ABSTRACT_PATH_POINT_H_
 #define OPENSIM_ABSTRACT_PATH_POINT_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  AbstractPathPoint.h                         *

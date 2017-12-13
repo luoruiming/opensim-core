@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ACTIVE_FORCE_LENGTH_CURVE_H_
+﻿#ifndef OPENSIM_ACTIVE_FORCE_LENGTH_CURVE_H_
 #define OPENSIM_ACTIVE_FORCE_LENGTH_CURVE_H_
 /* -------------------------------------------------------------------------- *
  *                     OpenSim:  ActiveForceLengthCurve.h                     *

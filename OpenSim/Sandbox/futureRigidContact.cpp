@@ -1,4 +1,4 @@
-/* Comments from https://github.com/opensim-org/opensim-core/pull/663 that have
+﻿/* Comments from https://github.com/opensim-org/opensim-core/pull/663 that have
 not yet been addressed:
 
 @chrisdembia:

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MOVING_PATH_POINT_H_
+﻿#ifndef OPENSIM_MOVING_PATH_POINT_H_
 #define OPENSIM_MOVING_PATH_POINT_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  MovingPathPoint.h                         *

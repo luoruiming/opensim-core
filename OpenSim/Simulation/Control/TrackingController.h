@@ -1,4 +1,4 @@
-#ifndef OPENSIM_TRACKING_CONTROLLER_H_
+﻿#ifndef OPENSIM_TRACKING_CONTROLLER_H_
 #define OPENSIM_TRACKING_CONTROLLER_H_
 
 /* -------------------------------------------------------------------------- *

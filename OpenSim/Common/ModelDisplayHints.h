@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MODEL_DISPLAY_HINTS_H_
+﻿#ifndef OPENSIM_MODEL_DISPLAY_HINTS_H_
 #define OPENSIM_MODEL_DISPLAY_HINTS_H_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  ModelDisplayHints.h                        *

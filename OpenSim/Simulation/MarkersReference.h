@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MARKERS_REFERENCE_H_
+﻿#ifndef OPENSIM_MARKERS_REFERENCE_H_
 #define OPENSIM_MARKERS_REFERENCE_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  MarkersReference.h                        *

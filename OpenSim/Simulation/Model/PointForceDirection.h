@@ -1,4 +1,4 @@
-#ifndef __PointForceDirection_h__
+﻿#ifndef __PointForceDirection_h__
 #define __PointForceDirection_h__
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  PointForceDirection.h                       *

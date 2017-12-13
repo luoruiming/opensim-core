@@ -1,4 +1,4 @@
-#ifndef _defineDeviceAndController_answers_h_
+﻿#ifndef _defineDeviceAndController_answers_h_
 #define _defineDeviceAndController_answers_h_
 /* -------------------------------------------------------------------------- *
  *               OpenSim:  defineDeviceAndController_answers.h                *

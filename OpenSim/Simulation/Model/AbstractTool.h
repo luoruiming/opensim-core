@@ -1,4 +1,4 @@
-#ifndef _AbstractTool_h_
+﻿#ifndef _AbstractTool_h_
 #define _AbstractTool_h_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  AbstractTool.h                          *

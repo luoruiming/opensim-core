@@ -1,4 +1,4 @@
-#ifndef OPENSIM_REFERENCE_H_
+﻿#ifndef OPENSIM_REFERENCE_H_
 #define OPENSIM_REFERENCE_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  Reference.h                            *

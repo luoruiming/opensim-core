@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ARRAY_H_
+﻿#ifndef OPENSIM_ARRAY_H_
 #define OPENSIM_ARRAY_H_
 /* -------------------------------------------------------------------------- *
  *                             OpenSim:  Array.h                              *

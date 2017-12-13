@@ -1,4 +1,4 @@
-/* Configuration for GNU C-compiler for MIPS Rx000 family
+﻿/* Configuration for GNU C-compiler for MIPS Rx000 family
    Copyright (C) 1987 Free Software Foundation, Inc.
 
 This file is part of GNU CC.

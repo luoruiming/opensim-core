@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ABSTRACT_PROPERTY_H_
+﻿#ifndef OPENSIM_ABSTRACT_PROPERTY_H_
 #define OPENSIM_ABSTRACT_PROPERTY_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  AbstractProperty.h                        *

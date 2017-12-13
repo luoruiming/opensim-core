@@ -1,4 +1,4 @@
-#ifndef OPENSIM_Millard2012EquilibriumMuscle_h__
+﻿#ifndef OPENSIM_Millard2012EquilibriumMuscle_h__
 #define OPENSIM_Millard2012EquilibriumMuscle_h__
 /* -------------------------------------------------------------------------- *
  *                  OpenSim:  Millard2012EquilibriumMuscle.h                  *

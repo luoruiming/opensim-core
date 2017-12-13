@@ -1,4 +1,4 @@
-#ifndef _WrapMath_h_
+﻿#ifndef _WrapMath_h_
 #define _WrapMath_h_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  WrapMath.h                            *

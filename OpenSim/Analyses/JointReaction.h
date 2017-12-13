@@ -1,4 +1,4 @@
-#ifndef _JointReaction_h_
+﻿#ifndef _JointReaction_h_
 #define _JointReaction_h_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  JointReaction.h                          *

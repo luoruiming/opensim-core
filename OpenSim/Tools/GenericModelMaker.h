@@ -1,4 +1,4 @@
-#ifndef __GenericModelMaker_h__
+﻿#ifndef __GenericModelMaker_h__
 #define __GenericModelMaker_h__
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  GenericModelMaker.h                        *

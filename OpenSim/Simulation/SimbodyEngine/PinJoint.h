@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PIN_JOINT_H_
+﻿#ifndef OPENSIM_PIN_JOINT_H_
 #define OPENSIM_PIN_JOINT_H_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  PinJoint.h                            *

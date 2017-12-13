@@ -1,4 +1,4 @@
-#ifndef OPENSIM_OSIMCOMMON_H_
+﻿#ifndef OPENSIM_OSIMCOMMON_H_
 #define OPENSIM_OSIMCOMMON_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  osimCommon.h                           *

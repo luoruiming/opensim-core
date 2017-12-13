@@ -1,4 +1,4 @@
-#ifndef _osimSimmFileWriterDll_h_
+﻿#ifndef _osimSimmFileWriterDll_h_
 #define _osimSimmFileWriterDll_h_
 /* -------------------------------------------------------------------------- *
  *                         osimSimmFileWriterDLL.h                            *

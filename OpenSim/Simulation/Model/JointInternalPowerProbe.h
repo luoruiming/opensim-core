@@ -1,4 +1,4 @@
-#ifndef OPENSIM_JOINT_INTERNAL_POWER_PROBE_H_
+﻿#ifndef OPENSIM_JOINT_INTERNAL_POWER_PROBE_H_
 #define OPENSIM_JOINT_INTERNAL_POWER_PROBE_H_
 /* -------------------------------------------------------------------------- *
  *                    OpenSim:  JointInternalPowerProbe.h                     *

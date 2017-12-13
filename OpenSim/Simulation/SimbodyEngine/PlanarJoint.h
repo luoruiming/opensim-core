@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PLANAR_JOINT_H_
+﻿#ifndef OPENSIM_PLANAR_JOINT_H_
 #define OPENSIM_PLANAR_JOINT_H_
 /* -------------------------------------------------------- ----------------- *
  *                         OpenSim:  PlanarJoint.h                            *

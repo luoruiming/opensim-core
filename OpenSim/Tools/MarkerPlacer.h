@@ -1,4 +1,4 @@
-#ifndef __MarkerPlacer_h__
+﻿#ifndef __MarkerPlacer_h__
 #define __MarkerPlacer_h__
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  MarkerPlacer.h                          *

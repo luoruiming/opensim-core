@@ -1,4 +1,4 @@
-#include "CSVFileAdapter.h"
+﻿#include "CSVFileAdapter.h"
 
 namespace OpenSim {
 

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_EXCEPTION_H_
+﻿#ifndef OPENSIM_EXCEPTION_H_
 #define OPENSIM_EXCEPTION_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  Exception.h                            *

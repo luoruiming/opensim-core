@@ -1,4 +1,4 @@
-#ifndef OPENSIM_POINT_TO_POINT_ACTUATOR_H_
+﻿#ifndef OPENSIM_POINT_TO_POINT_ACTUATOR_H_
 #define OPENSIM_POINT_TO_POINT_ACTUATOR_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  PointToPointActuator.h                      *

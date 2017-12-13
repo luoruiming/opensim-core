@@ -1,4 +1,4 @@
-#ifndef _OPENSIM_HOPPERDEVICE_H_
+﻿#ifndef _OPENSIM_HOPPERDEVICE_H_
 #define _OPENSIM_HOPPERDEVICE_H_
 /* -------------------------------------------------------------------------- *
  *               OpenSim:  HopperDevice.h                                     *

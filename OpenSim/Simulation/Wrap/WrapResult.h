@@ -1,4 +1,4 @@
-#ifndef OPENSIM_WRAP_RESULT_H
+﻿#ifndef OPENSIM_WRAP_RESULT_H
 #define OPENSIM_WRAP_RESULT_H
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  WrapResult.h                           *

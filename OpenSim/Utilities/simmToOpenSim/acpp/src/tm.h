@@ -1,4 +1,4 @@
-/* Definitions of target machine for GNU compiler.  MIPS version.
+﻿/* Definitions of target machine for GNU compiler.  MIPS version.
    Contributed by   A. Lichnewsky, lich@inria.inria.fr
    Copyright (C) 1989 Free Software Foundation, Inc.
 

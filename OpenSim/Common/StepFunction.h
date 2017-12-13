@@ -1,4 +1,4 @@
-#ifndef OPENSIM_STEP_FUNCTION_H_
+﻿#ifndef OPENSIM_STEP_FUNCTION_H_
 #define OPENSIM_STEP_FUNCTION_H_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  StepFunction.h                          *

@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ROLLING_ON_SURFACE_CONSTRAINT_H_
+﻿#ifndef OPENSIM_ROLLING_ON_SURFACE_CONSTRAINT_H_
 #define OPENSIM_ROLLING_ON_SURFACE_CONSTRAINT_H_
 /* -------------------------------------------------------------------------- *
  *                   OpenSim:  RollingOnSurfaceConstraint.h                   *

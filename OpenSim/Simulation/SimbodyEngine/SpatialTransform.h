@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SPATIAL_TRANSFORM_H_
+﻿#ifndef OPENSIM_SPATIAL_TRANSFORM_H_
 #define OPENSIM_SPATIAL_TRANSFORM_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  SpatialTransform.h                        *

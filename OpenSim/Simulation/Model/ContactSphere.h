@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONTACT_SPHERE_H_
+﻿#ifndef OPENSIM_CONTACT_SPHERE_H_
 #define OPENSIM_CONTACT_SPHERE_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  ContactSphere.h                          *

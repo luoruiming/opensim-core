@@ -1,4 +1,4 @@
-#ifndef OPENSIM_InverseDynamicsSolver_H_
+﻿#ifndef OPENSIM_InverseDynamicsSolver_H_
 #define OPENSIM_InverseDynamicsSolver_H_
 /* -------------------------------------------------------------------------- *
  *                     OpenSim:  InverseDynamicsSolver.h                      *

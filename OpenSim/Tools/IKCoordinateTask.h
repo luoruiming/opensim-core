@@ -1,4 +1,4 @@
-#ifndef __IKCoordinateTask_h__
+﻿#ifndef __IKCoordinateTask_h__
 #define __IKCoordinateTask_h__
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  IKCoordinateTask.h                        *

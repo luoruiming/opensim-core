@@ -1,4 +1,4 @@
-#ifndef OPENSIM_BODY_ACTUATOR_H_
+﻿#ifndef OPENSIM_BODY_ACTUATOR_H_
 #define OPENSIM_BODY_ACTUATOR_H_
 /* ------------------------------------------------------------------------- *
 *                         OpenSim:  BodyActuator.h                           *

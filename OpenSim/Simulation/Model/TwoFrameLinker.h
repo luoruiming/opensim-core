@@ -1,4 +1,4 @@
-#ifndef OPENSIM_TWO_FRAME_LINKER_H_
+﻿#ifndef OPENSIM_TWO_FRAME_LINKER_H_
 #define OPENSIM_TWO_FRAME_LINKER_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  TwoFrameLinker.h                          *

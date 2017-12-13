@@ -1,4 +1,4 @@
-#ifndef _ControlConstant_h_
+﻿#ifndef _ControlConstant_h_
 #define _ControlConstant_h_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  ControlConstant.h                         *

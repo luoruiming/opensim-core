@@ -1,4 +1,4 @@
-#ifndef OPENSIM_MARKER_DATA_H_
+﻿#ifndef OPENSIM_MARKER_DATA_H_
 #define OPENSIM_MARKER_DATA_H_
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  MarkerData.h                           *

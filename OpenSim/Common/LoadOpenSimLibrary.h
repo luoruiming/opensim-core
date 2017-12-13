@@ -1,4 +1,4 @@
-#ifndef OPENSIM_LOAD_OPENSIM_LIBRARY_H_
+﻿#ifndef OPENSIM_LOAD_OPENSIM_LIBRARY_H_
 #define OPENSIM_LOAD_OPENSIM_LIBRARY_H_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  LoadOpenSimLibrary.h                       *

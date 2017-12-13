@@ -1,4 +1,4 @@
-#ifndef OPENSIM_CONTROL_LINEAR_NODE_H_
+﻿#ifndef OPENSIM_CONTROL_LINEAR_NODE_H_
 #define OPENSIM_CONTROL_LINEAR_NODE_H_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  ControlLinearNode.h                        *

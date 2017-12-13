@@ -1,4 +1,4 @@
-#ifndef _ControllableSpring_h_
+﻿#ifndef _ControllableSpring_h_
 #define _ControllableSpring_h_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  ControllableSpring.h                       *

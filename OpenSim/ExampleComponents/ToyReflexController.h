@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ToyReflexController_H_
+﻿#ifndef OPENSIM_ToyReflexController_H_
 #define OPENSIM_ToyReflexController_H_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim: ToyReflexController.h                        *

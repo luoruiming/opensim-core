@@ -1,4 +1,4 @@
-#ifndef OPENSIM_VECTOR_FUNCTION_H_
+﻿#ifndef OPENSIM_VECTOR_FUNCTION_H_
 #define OPENSIM_VECTOR_FUNCTION_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  VectorFunction.h                         *

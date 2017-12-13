@@ -1,4 +1,4 @@
-#ifndef _osimCommonTemplates_h_
+﻿#ifndef _osimCommonTemplates_h_
 #define _osimCommonTemplates_h_
 /* -------------------------------------------------------------------------- *
  *                      OpenSim:  osimCommonTemplates.h                       *

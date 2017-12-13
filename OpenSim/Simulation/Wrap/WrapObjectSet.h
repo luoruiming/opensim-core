@@ -1,4 +1,4 @@
-#ifndef __WrapObjectSet_h__
+﻿#ifndef __WrapObjectSet_h__
 #define __WrapObjectSet_h__
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  WrapObjectSet.h                          *

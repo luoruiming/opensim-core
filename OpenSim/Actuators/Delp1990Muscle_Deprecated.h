@@ -1,4 +1,4 @@
-#ifndef __Delp1990Muscle_Deprecated_h__
+﻿#ifndef __Delp1990Muscle_Deprecated_h__
 #define __Delp1990Muscle_Deprecated_h__
 /* -------------------------------------------------------------------------- *
  *                   OpenSim:  Delp1990Muscle_Deprecated.h                    *

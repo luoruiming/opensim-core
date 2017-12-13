@@ -1,4 +1,4 @@
-#ifndef OPENSIM_THELEN_2003_MUSCLE_H_
+﻿#ifndef OPENSIM_THELEN_2003_MUSCLE_H_
 #define OPENSIM_THELEN_2003_MUSCLE_H_
 /* -------------------------------------------------------------------------- *
  *                        OpenSim:  Thelen2003Muscle.h                        *

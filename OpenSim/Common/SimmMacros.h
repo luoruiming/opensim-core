@@ -1,4 +1,4 @@
-#ifndef __SimmMacros_h__
+﻿#ifndef __SimmMacros_h__
 #define __SimmMacros_h__
 /* -------------------------------------------------------------------------- *
  *                           OpenSim:  SimmMacros.h                           *

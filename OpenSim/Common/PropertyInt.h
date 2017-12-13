@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PROPERTY_INT_H_
+﻿#ifndef OPENSIM_PROPERTY_INT_H_
 #define OPENSIM_PROPERTY_INT_H_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  PropertyInt.h                           *

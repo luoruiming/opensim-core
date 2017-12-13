@@ -1,4 +1,4 @@
-#ifndef _Actuation_h_
+﻿#ifndef _Actuation_h_
 #define _Actuation_h_
 /* -------------------------------------------------------------------------- *
 *                           OpenSim:  Actuation.h                            *

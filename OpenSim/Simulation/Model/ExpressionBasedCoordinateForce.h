@@ -1,4 +1,4 @@
-#ifndef OPENSIM_EXPRESSION_BASED_COORDINATE_FORCE_H_
+﻿#ifndef OPENSIM_EXPRESSION_BASED_COORDINATE_FORCE_H_
 #define OPENSIM_EXPRESSION_BASED_COORDINATE_FORCE_H_
 /* -------------------------------------------------------------------------- *
  *                OpenSim:  ExpressionBasedCoordinateForce.h                  *

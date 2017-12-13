@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SLIDER_JOINT_H_
+﻿#ifndef OPENSIM_SLIDER_JOINT_H_
 #define OPENSIM_SLIDER_JOINT_H_
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  SliderJoint.h                           *

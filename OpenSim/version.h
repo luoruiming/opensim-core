@@ -1,4 +1,4 @@
-#ifndef _version_h_
+﻿#ifndef _version_h_
 #define _version_h_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  version.h                             *

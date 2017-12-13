@@ -1,4 +1,4 @@
-#ifndef OPENSIM_SYSTEM_ENERGY_PROBE_H_
+﻿#ifndef OPENSIM_SYSTEM_ENERGY_PROBE_H_
 #define OPENSIM_SYSTEM_ENERGY_PROBE_H_
 /* -------------------------------------------------------------------------- *
  *                       OpenSim:  SystemEnergyProbe.h                        *

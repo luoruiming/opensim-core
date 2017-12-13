@@ -1,4 +1,4 @@
-#ifndef _RegisterTypes_Actuators_h_
+﻿#ifndef _RegisterTypes_Actuators_h_
 #define _RegisterTypes_Actuators_h_
 /* -------------------------------------------------------------------------- *
  *                  OpenSim:  RegisterTypes_osimActuators.h                   *

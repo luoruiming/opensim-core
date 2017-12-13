@@ -1,4 +1,4 @@
-#ifndef OPENSIM_ACTIVE_FIBER_POWER_PROBE_H_
+﻿#ifndef OPENSIM_ACTIVE_FIBER_POWER_PROBE_H_
 #define OPENSIM_ACTIVE_FIBER_POWER_PROBE_H_
 /* -------------------------------------------------------------------------- *
  *                  OpenSim:  MuscleActiveFiberPowerProbe.h                   *

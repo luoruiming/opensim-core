@@ -1,4 +1,4 @@
-#ifndef OPENSIM_LIGAMENT_H_
+﻿#ifndef OPENSIM_LIGAMENT_H_
 #define OPENSIM_LIGAMENT_H_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  Ligament.h                            *

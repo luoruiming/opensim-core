@@ -1,4 +1,4 @@
-#ifndef OPENSIM_PROPERTY_OBJ_PTR_H_
+﻿#ifndef OPENSIM_PROPERTY_OBJ_PTR_H_
 #define OPENSIM_PROPERTY_OBJ_PTR_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  PropertyObjPtr.h                         *

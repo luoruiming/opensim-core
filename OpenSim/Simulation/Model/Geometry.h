@@ -1,4 +1,4 @@
-#ifndef OPENSIM_GEOMETRY_H_
+﻿#ifndef OPENSIM_GEOMETRY_H_
 #define OPENSIM_GEOMETRY_H_
 /* -------------------------------------------------------------------------- *
  *                            OpenSim:  Geometry.h                            *

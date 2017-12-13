@@ -1,4 +1,4 @@
-/*
+﻿/*
     function prototypes
 */
 int gcvspl(double *, double *, int *, double *, double *, int *, int *,

@@ -1,4 +1,4 @@
-#ifndef __MarkerFrame_h__
+﻿#ifndef __MarkerFrame_h__
 #define __MarkerFrame_h__
 /* -------------------------------------------------------------------------- *
  *                          OpenSim:  MarkerFrame.h                           *

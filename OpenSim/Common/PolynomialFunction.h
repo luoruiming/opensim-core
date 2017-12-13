@@ -1,4 +1,4 @@
-#ifndef OPENSIM_POLYNOMIAL_FUNCTION_H_
+﻿#ifndef OPENSIM_POLYNOMIAL_FUNCTION_H_
 #define OPENSIM_POLYNOMIAL_FUNCTION_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  PolynomialFunction.h                     *

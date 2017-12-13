@@ -1,4 +1,4 @@
-#ifndef OPENSIM_EXTERNAL_FORCE_H_
+﻿#ifndef OPENSIM_EXTERNAL_FORCE_H_
 #define OPENSIM_EXTERNAL_FORCE_H_
 /* -------------------------------------------------------------------------- *
  *                         OpenSim:  ExternalForce.h                          *
